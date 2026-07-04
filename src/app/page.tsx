@@ -1,65 +1,292 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+import Link from "next/link";
+import {
+  Brain,
+  Globe,
+  MessageSquare,
+  Search,
+  ShieldCheck,
+  Sparkles,
+  Zap,
+} from "lucide-react";
 
-export default function Home() {
+import { BackgroundPaths } from "@/components/hero";
+import { SectionHeading } from "@/components/section-heading";
+import { CtaSection } from "@/components/cta-section";
+import { Reveal } from "@/components/reveal";
+import { Button } from "@/components/ui/button";
+
+export const metadata: Metadata = {
+  title: "Lumina | AI Search That Understands You",
+};
+
+const trustedBy = [
+  "Northwind",
+  "Acme Corp",
+  "Globex",
+  "Initech",
+  "Umbrella",
+  "Stark Labs",
+];
+
+const steps = [
+  {
+    icon: MessageSquare,
+    title: "Ask in your own words",
+    description:
+      "Type a question the way you would ask a friend. No keywords, no operators, no tricks required.",
+  },
+  {
+    icon: Brain,
+    title: "Lumina understands intent",
+    description:
+      "Our AI reads between the lines, figures out what you actually mean and scans millions of sources in real time.",
+  },
+  {
+    icon: Sparkles,
+    title: "Get a clear answer",
+    description:
+      "Receive one concise answer with citations you can verify, instead of ten blue links you have to read yourself.",
+  },
+];
+
+const features = [
+  {
+    icon: Search,
+    title: "Semantic search",
+    description:
+      "Lumina understands meaning, not just keywords. Ask vague questions and still get precise results.",
+  },
+  {
+    icon: Zap,
+    title: "Instant answers",
+    description:
+      "Median response time under one second. Answers arrive before you finish reaching for your coffee.",
+  },
+  {
+    icon: Globe,
+    title: "The whole web, one box",
+    description:
+      "Products, papers, news, code and more. One search box that covers everything you care about.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Privacy by default",
+    description:
+      "No ad tracking, no selling your data, no creepy profiles. Your searches belong to you.",
+  },
+  {
+    icon: Brain,
+    title: "AI summaries",
+    description:
+      "Long articles condensed into a few sentences with sources attached, so you can decide what to read deeply.",
+  },
+  {
+    icon: MessageSquare,
+    title: "Follow up naturally",
+    description:
+      "Refine any answer with a follow up question. Lumina remembers the context of your conversation.",
+  },
+];
+
+const stats = [
+  { value: "40K+", label: "Active users" },
+  { value: "12M", label: "Questions answered" },
+  { value: "0.8s", label: "Median answer time" },
+  { value: "99.9%", label: "Uptime" },
+];
+
+const testimonials = [
+  {
+    quote:
+      "I stopped opening ten tabs to compare products. Lumina gives me the comparison in one answer with sources. It saves me hours every week.",
+    name: "Sarah Chen",
+    role: "Product Manager at Northwind",
+  },
+  {
+    quote:
+      "As a researcher I was skeptical about AI answers. The citations changed my mind. I can verify everything in one click.",
+    name: "Dr. Miguel Alvarez",
+    role: "Research Scientist",
+  },
+  {
+    quote:
+      "Our whole support team switched to Lumina. Finding documentation and past solutions is now instant instead of a ten minute hunt.",
+    name: "Emma Kowalski",
+    role: "Head of Support at Globex",
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <BackgroundPaths title="Search Made Simple" />
+
+      <section className="border-y border-black/5 bg-neutral-50 py-12 dark:border-white/10 dark:bg-neutral-900/40">
+        <div className="container mx-auto px-4 md:px-6">
+          <Reveal>
+            <p className="text-center text-sm font-medium uppercase tracking-widest text-muted-foreground">
+              Trusted by teams at
+            </p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+              {trustedBy.map((name) => (
+                <span
+                  key={name}
+                  className="text-lg font-semibold tracking-tight text-neutral-400 dark:text-neutral-600"
+                >
+                  {name}
+                </span>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 py-24 md:px-6">
+        <SectionHeading
+          eyebrow="How it works"
+          title="From question to answer in seconds"
+          description="Three simple steps stand between you and exactly what you were looking for."
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <div className="mt-16 grid gap-8 md:grid-cols-3">
+          {steps.map((step, i) => (
+            <Reveal key={step.title} delay={i * 0.1}>
+              <div className="relative h-full rounded-2xl border border-black/5 bg-white p-8 shadow-sm dark:border-white/10 dark:bg-neutral-900">
+                <span className="absolute right-6 top-6 text-5xl font-bold text-neutral-100 dark:text-neutral-800">
+                  {i + 1}
+                </span>
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-neutral-900 text-white dark:bg-white dark:text-neutral-900">
+                  <step.icon className="h-5 w-5" />
+                </span>
+                <h3 className="mt-6 text-xl font-semibold">{step.title}</h3>
+                <p className="mt-3 text-muted-foreground">
+                  {step.description}
+                </p>
+              </div>
+            </Reveal>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="border-y border-black/5 bg-neutral-50 py-24 dark:border-white/10 dark:bg-neutral-900/40">
+        <div className="container mx-auto px-4 md:px-6">
+          <SectionHeading
+            eyebrow="See it in action"
+            title="One question. One answer. Done."
+          />
+          <Reveal className="mx-auto mt-14 max-w-3xl" delay={0.1}>
+            <div className="overflow-hidden rounded-2xl border border-black/5 bg-white shadow-xl dark:border-white/10 dark:bg-neutral-900">
+              <div className="flex items-center gap-2 border-b border-black/5 px-5 py-3 dark:border-white/10">
+                <span className="h-3 w-3 rounded-full bg-red-400" />
+                <span className="h-3 w-3 rounded-full bg-yellow-400" />
+                <span className="h-3 w-3 rounded-full bg-green-400" />
+              </div>
+              <div className="p-6 md:p-8">
+                <div className="flex items-center gap-3 rounded-xl border border-black/10 px-4 py-3 dark:border-white/15">
+                  <Search className="h-5 w-5 text-muted-foreground" />
+                  <span className="text-sm md:text-base">
+                    best lightweight laptop for travel under $1000
+                  </span>
+                </div>
+                <div className="mt-6 rounded-xl bg-neutral-50 p-5 dark:bg-neutral-800/60">
+                  <div className="flex items-center gap-2 text-sm font-semibold">
+                    <Sparkles className="h-4 w-4" />
+                    Lumina answer
+                  </div>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+                    Based on 27 recent reviews, the best pick right now is the
+                    Zephyr Air 13 at $949. It weighs 1.1 kg, lasts 18 hours on
+                    battery and handles everyday work with ease. If you need
+                    more ports, the Nova Book 14 at $899 is a close second.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {["techreview.com", "laptopmag.com", "wired.com"].map(
+                      (source) => (
+                        <span
+                          key={source}
+                          className="rounded-full border border-black/10 px-3 py-1 text-xs text-muted-foreground dark:border-white/15"
+                        >
+                          {source}
+                        </span>
+                      )
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="container mx-auto px-4 py-24 md:px-6">
+        <SectionHeading
+          eyebrow="Features"
+          title="Everything you need, nothing you dread"
+          description="Built from the ground up for people who value their time and their privacy."
+        />
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature, i) => (
+            <Reveal key={feature.title} delay={(i % 3) * 0.1}>
+              <div className="h-full rounded-2xl border border-black/5 bg-white p-8 shadow-sm transition-shadow hover:shadow-md dark:border-white/10 dark:bg-neutral-900">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-neutral-100 dark:bg-neutral-800">
+                  <feature.icon className="h-5 w-5" />
+                </span>
+                <h3 className="mt-6 text-lg font-semibold">{feature.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {feature.description}
+                </p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal className="mt-12 text-center">
+          <Button variant="outline" size="lg" asChild>
+            <Link href="/features">
+              Explore all features
+              <span aria-hidden>→</span>
+            </Link>
+          </Button>
+        </Reveal>
+      </section>
+
+      <section className="border-y border-black/5 bg-neutral-900 py-20 text-white dark:border-white/10 dark:bg-neutral-900/60">
+        <div className="container mx-auto grid grid-cols-2 gap-10 px-4 md:grid-cols-4 md:px-6">
+          {stats.map((stat, i) => (
+            <Reveal key={stat.label} delay={i * 0.08} className="text-center">
+              <p className="text-4xl font-bold tracking-tight md:text-5xl">
+                {stat.value}
+              </p>
+              <p className="mt-2 text-sm text-white/60">{stat.label}</p>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 py-24 md:px-6">
+        <SectionHeading
+          eyebrow="Testimonials"
+          title="People love searching again"
+        />
+        <div className="mt-16 grid gap-8 md:grid-cols-3">
+          {testimonials.map((testimonial, i) => (
+            <Reveal key={testimonial.name} delay={i * 0.1}>
+              <figure className="flex h-full flex-col justify-between rounded-2xl border border-black/5 bg-white p-8 shadow-sm dark:border-white/10 dark:bg-neutral-900">
+                <blockquote className="text-sm leading-relaxed text-muted-foreground md:text-base">
+                  “{testimonial.quote}”
+                </blockquote>
+                <figcaption className="mt-6">
+                  <p className="font-semibold">{testimonial.name}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {testimonial.role}
+                  </p>
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <CtaSection />
+    </>
   );
 }
