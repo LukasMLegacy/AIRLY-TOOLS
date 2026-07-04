@@ -16,12 +16,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://airly.tools"),
   title: {
-    default: "Lumina | AI Search That Understands You",
-    template: "%s | Lumina",
+    default: "AIRLY TOOLS | AI Search That Understands You",
+    template: "%s | AIRLY TOOLS",
   },
   description:
-    "Lumina is the AI search engine that understands what you mean. Ask anything in plain language and get instant answers with trusted sources. Searching has never been easier.",
+    "AIRLY TOOLS is the AI search engine that understands what you mean. Ask anything in plain language and get instant answers with trusted sources. Searching has never been easier.",
   keywords: [
     "AI search",
     "search engine",
@@ -30,11 +31,11 @@ export const metadata: Metadata = {
     "AI assistant",
   ],
   openGraph: {
-    title: "Lumina | AI Search That Understands You",
+    title: "AIRLY TOOLS | AI Search That Understands You",
     description:
       "Ask anything in plain language and get instant answers with trusted sources. Searching has never been easier.",
     type: "website",
-    siteName: "Lumina",
+    siteName: "AIRLY TOOLS",
   },
 };
 

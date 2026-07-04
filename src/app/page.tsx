@@ -17,7 +17,7 @@ import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Lumina | AI Search That Understands You",
+  title: "AIRLY TOOLS | AI Search That Understands You",
 };
 
 const trustedBy = [
@@ -38,7 +38,7 @@ const steps = [
   },
   {
     icon: Brain,
-    title: "Lumina understands intent",
+    title: "AIRLY TOOLS understands intent",
     description:
       "Our AI reads between the lines, figures out what you actually mean and scans millions of sources in real time.",
   },
@@ -55,7 +55,7 @@ const features = [
     icon: Search,
     title: "Semantic search",
     description:
-      "Lumina understands meaning, not just keywords. Ask vague questions and still get precise results.",
+      "AIRLY TOOLS understands meaning, not just keywords. Ask vague questions and still get precise results.",
   },
   {
     icon: Zap,
@@ -85,7 +85,7 @@ const features = [
     icon: MessageSquare,
     title: "Follow up naturally",
     description:
-      "Refine any answer with a follow up question. Lumina remembers the context of your conversation.",
+      "Refine any answer with a follow up question. AIRLY TOOLS remembers the context of your conversation.",
   },
 ];
 
@@ -99,7 +99,7 @@ const stats = [
 const testimonials = [
   {
     quote:
-      "I stopped opening ten tabs to compare products. Lumina gives me the comparison in one answer with sources. It saves me hours every week.",
+      "I stopped opening ten tabs to compare products. AIRLY TOOLS gives me the comparison in one answer with sources. It saves me hours every week.",
     name: "Sarah Chen",
     role: "Product Manager at Northwind",
   },
@@ -111,7 +111,7 @@ const testimonials = [
   },
   {
     quote:
-      "Our whole support team switched to Lumina. Finding documentation and past solutions is now instant instead of a ten minute hunt.",
+      "Our whole support team switched to AIRLY TOOLS. Finding documentation and past solutions is now instant instead of a ten minute hunt.",
     name: "Emma Kowalski",
     role: "Head of Support at Globex",
   },
@@ -120,7 +120,7 @@ const testimonials = [
 export default function HomePage() {
   return (
     <>
-      <BackgroundPaths title="Search Made Simple" />
+      <BackgroundPaths title="AIRLY TOOLS" />
 
       <section className="border-y border-black/5 bg-neutral-50 py-12 dark:border-white/10 dark:bg-neutral-900/40">
         <div className="container mx-auto px-4 md:px-6">
@@ -191,7 +191,7 @@ export default function HomePage() {
                 <div className="mt-6 rounded-xl bg-neutral-50 p-5 dark:bg-neutral-800/60">
                   <div className="flex items-center gap-2 text-sm font-semibold">
                     <Sparkles className="h-4 w-4" />
-                    Lumina answer
+                    AIRLY TOOLS answer
                   </div>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
                     Based on 27 recent reviews, the best pick right now is the

@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers to the most common questions about Lumina, the AI search engine that understands you.",
+    "Answers to the most common questions about AIRLY TOOLS, the AI search engine that understands you.",
 };
 
 const faqGroups = [
@@ -22,27 +22,27 @@ const faqGroups = [
     title: "Product",
     items: [
       {
-        question: "What exactly is Lumina?",
+        question: "What exactly is AIRLY TOOLS?",
         answer:
-          "Lumina is an AI search engine. Instead of returning a list of links, it reads the most relevant sources for you and replies with one clear answer, complete with citations you can verify. Think of it as a very fast research assistant that lives in your search bar.",
+          "AIRLY TOOLS is an AI search engine. Instead of returning a list of links, it reads the most relevant sources for you and replies with one clear answer, complete with citations you can verify. Think of it as a very fast research assistant that lives in your search bar.",
       },
       {
         question: "How is it different from a regular search engine?",
         answer:
-          "Regular search engines match keywords and rank pages, then leave the reading to you. Lumina understands the meaning of your question, gathers information from multiple sources and synthesizes a direct answer. You get the conclusion first and the links second.",
+          "Regular search engines match keywords and rank pages, then leave the reading to you. AIRLY TOOLS understands the meaning of your question, gathers information from multiple sources and synthesizes a direct answer. You get the conclusion first and the links second.",
       },
       {
         question: "Can I trust the answers?",
         answer:
-          "Every answer includes citations that link straight to the original sources, so you can verify any claim in one click. When sources disagree or evidence is thin, Lumina says so instead of guessing. We believe honesty beats confidence.",
+          "Every answer includes citations that link straight to the original sources, so you can verify any claim in one click. When sources disagree or evidence is thin, AIRLY TOOLS says so instead of guessing. We believe honesty beats confidence.",
       },
       {
-        question: "What languages does Lumina support?",
+        question: "What languages does AIRLY TOOLS support?",
         answer:
-          "Lumina currently understands questions in more than 30 languages including English, Spanish, German, French, Slovak, Czech, Japanese and Portuguese. Answers are returned in the language you ask in.",
+          "AIRLY TOOLS currently understands questions in more than 30 languages including English, Spanish, German, French, Slovak, Czech, Japanese and Portuguese. Answers are returned in the language you ask in.",
       },
       {
-        question: "Does Lumina work on mobile?",
+        question: "Does AIRLY TOOLS work on mobile?",
         answer:
           "Yes. We have native apps for iOS and Android, and the web app works beautifully in any mobile browser. Your history and collections sync across all devices.",
       },
@@ -72,9 +72,9 @@ const faqGroups = [
     title: "Account and billing",
     items: [
       {
-        question: "Do I need an account to use Lumina?",
+        question: "Do I need an account to use AIRLY TOOLS?",
         answer:
-          "You can try Lumina without an account. Creating a free account unlocks search history, collections and syncing across devices.",
+          "You can try AIRLY TOOLS without an account. Creating a free account unlocks search history, collections and syncing across devices.",
       },
       {
         question: "How does the free plan work?",
@@ -96,7 +96,7 @@ export default function FaqPage() {
       <PageHeader
         eyebrow="FAQ"
         title="Frequently asked questions"
-        description="Everything you might want to know about Lumina. Cannot find your answer? Our team is one message away."
+        description="Everything you might want to know about AIRLY TOOLS. Cannot find your answer? Our team is one message away."
       />
 
       <section className="container mx-auto px-4 py-24 md:px-6">

@@ -22,7 +22,7 @@ import { Reveal } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "Features",
   description:
-    "Explore everything Lumina can do: semantic search, instant answers, AI summaries, privacy by default and much more.",
+    "Explore everything AIRLY TOOLS can do: semantic search, instant answers, AI summaries, privacy by default and much more.",
 };
 
 const coreFeatures = [
@@ -30,25 +30,25 @@ const coreFeatures = [
     icon: Search,
     title: "Semantic search",
     description:
-      "Traditional search matches keywords. Lumina matches meaning. Ask about that movie where time runs backwards and get the right answer, even if you never mention the title. Our models understand context, synonyms and intent, so vague questions still lead to precise results.",
+      "Traditional search matches keywords. AIRLY TOOLS matches meaning. Ask about that movie where time runs backwards and get the right answer, even if you never mention the title. Our models understand context, synonyms and intent, so vague questions still lead to precise results.",
   },
   {
     icon: Zap,
     title: "Instant answers",
     description:
-      "Waiting is the enemy of curiosity. Lumina answers in under a second for most queries, powered by a globally distributed index and models optimized for speed. You ask, you read, you move on with your day.",
+      "Waiting is the enemy of curiosity. AIRLY TOOLS answers in under a second for most queries, powered by a globally distributed index and models optimized for speed. You ask, you read, you move on with your day.",
   },
   {
     icon: Sparkles,
     title: "AI summaries with citations",
     description:
-      "Every answer comes with sources you can inspect. Lumina condenses long articles, reviews and papers into a few clear sentences and always shows where each claim comes from. Trust, but verify, in one click.",
+      "Every answer comes with sources you can inspect. AIRLY TOOLS condenses long articles, reviews and papers into a few clear sentences and always shows where each claim comes from. Trust, but verify, in one click.",
   },
   {
     icon: MessageSquare,
     title: "Conversational follow ups",
     description:
-      "Search is rarely a single question. Ask a follow up and Lumina remembers what you were talking about. Narrow down, compare options or ask for more detail without repeating yourself.",
+      "Search is rarely a single question. Ask a follow up and AIRLY TOOLS remembers what you were talking about. Narrow down, compare options or ask for more detail without repeating yourself.",
   },
   {
     icon: ShieldCheck,
@@ -60,7 +60,7 @@ const coreFeatures = [
     icon: Globe,
     title: "Search everything",
     description:
-      "The web, news, academic papers, product catalogs, code repositories and forums. Lumina brings them together in one search box so you never have to think about where to look.",
+      "The web, news, academic papers, product catalogs, code repositories and forums. AIRLY TOOLS brings them together in one search box so you never have to think about where to look.",
   },
 ];
 
@@ -99,7 +99,7 @@ const moreFeatures = [
     icon: Brain,
     title: "Personal context",
     description:
-      "Optionally let Lumina learn your preferences to rank results the way you would. Fully under your control.",
+      "Optionally let AIRLY TOOLS learn your preferences to rank results the way you would. Fully under your control.",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function FeaturesPage() {
       <PageHeader
         eyebrow="Features"
         title="Search that works the way you think"
-        description="Lumina replaces keyword guessing and endless tabs with one clear answer. Here is everything under the hood."
+        description="AIRLY TOOLS replaces keyword guessing and endless tabs with one clear answer. Here is everything under the hood."
       />
 
       <section className="container mx-auto px-4 py-24 md:px-6">

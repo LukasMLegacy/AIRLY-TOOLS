@@ -1,6 +1,6 @@
-# Lumina
+# AIRLY TOOLS
 
-Marketing website for Lumina, an AI search engine that understands what you mean.
+Marketing website for [AIRLY TOOLS](https://airly.tools), an AI search engine that understands what you mean.
 
 Built with Next.js (App Router), TypeScript, Tailwind CSS, framer motion and shadcn/ui components.
 
@@ -30,3 +30,7 @@ Open http://localhost:3000 in your browser.
 npm run build
 npm start
 ```
+
+## Domain
+
+Production site: https://airly.tools

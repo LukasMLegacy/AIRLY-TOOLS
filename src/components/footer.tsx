@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Sparkles } from "lucide-react";
+
+import { Logo } from "@/components/logo";
 
 function XIcon({ className }: { className?: string }) {
   return (
@@ -58,15 +59,12 @@ export function Footer() {
       <div className="container mx-auto px-4 py-16 md:px-6">
         <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
-            <Link href="/" className="flex items-center gap-2 font-semibold">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-neutral-900 text-white dark:bg-white dark:text-neutral-900">
-                <Sparkles className="h-4 w-4" />
-              </span>
-              <span className="text-lg tracking-tight">Lumina</span>
+            <Link href="/">
+              <Logo />
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               AI search that understands what you mean. Find anything on the
-              web in seconds with answers you can trust.
+              web in seconds at airly.tools.
             </p>
             <div className="mt-6 flex gap-4">
               <a
@@ -114,7 +112,7 @@ export function Footer() {
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-black/5 pt-8 dark:border-white/10 md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Lumina Labs Inc. All rights reserved.
+            © {new Date().getFullYear()} Airly Tools Inc. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
             Made for people who search smarter.

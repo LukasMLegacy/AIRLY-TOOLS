@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple, transparent pricing for Lumina. Start free, upgrade when you are ready. No hidden fees, cancel anytime.",
+    "Simple, transparent pricing for AIRLY TOOLS. Start free, upgrade when you are ready. No hidden fees, cancel anytime.",
 };
 
 const billingFaq = [
@@ -36,7 +36,7 @@ const billingFaq = [
   {
     question: "What happens if I go over the Free plan limit?",
     answer:
-      "Nothing bad. Lumina keeps working as a regular search engine and your AI answer allowance refills at the start of the next month. You can upgrade whenever you want unlimited answers.",
+      "Nothing bad. AIRLY TOOLS keeps working as a regular search engine and your AI answer allowance refills at the start of the next month. You can upgrade whenever you want unlimited answers.",
   },
   {
     question: "Do you offer discounts for students or nonprofits?",

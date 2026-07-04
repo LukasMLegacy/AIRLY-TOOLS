@@ -8,19 +8,19 @@ import { Reveal } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with the Lumina team. Questions, feedback, sales or press, we would love to hear from you.",
+    "Get in touch with the AIRLY TOOLS team. Questions, feedback, sales or press, we would love to hear from you.",
 };
 
 const contactDetails = [
   {
     icon: Mail,
     title: "Email us",
-    lines: ["hello@lumina.search", "support@lumina.search"],
+    lines: ["hello@airly.tools", "support@airly.tools"],
   },
   {
     icon: MapPin,
     title: "Visit us",
-    lines: ["Lumina Labs Inc.", "548 Market Street, San Francisco, CA 94104"],
+    lines: ["Airly Tools Inc.", "548 Market Street, San Francisco, CA 94104"],
   },
   {
     icon: Clock,

@@ -9,7 +9,7 @@ import { Reveal } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet the team behind Lumina and learn why we believe searching the web should feel effortless.",
+    "Meet the team behind AIRLY TOOLS and learn why we believe searching the web should feel effortless.",
 };
 
 const values = [
@@ -23,7 +23,7 @@ const values = [
     icon: Lock,
     title: "Privacy is not a feature",
     description:
-      "It is the foundation. We built Lumina without ad tracking from day one, so we never have to choose between you and advertisers.",
+      "It is the foundation. We built AIRLY TOOLS without ad tracking from day one, so we never have to choose between you and advertisers.",
   },
   {
     icon: Lightbulb,
@@ -54,7 +54,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About us"
         title="We think search is broken. We are fixing it."
-        description="Lumina started with a simple frustration: finding anything online meant wading through ads, SEO spam and ten open tabs."
+        description="AIRLY TOOLS started with a simple frustration: finding anything online meant wading through ads, SEO spam and ten open tabs."
       />
 
       <section className="container mx-auto px-4 py-24 md:px-6">
@@ -72,11 +72,11 @@ export default function AboutPage() {
               So they built something for themselves: a search box that read
               the sources, understood the question and replied with one clear,
               cited answer. Friends asked for access. Then friends of friends.
-              Six months later, Lumina had ten thousand users and a waiting
+              Six months later, AIRLY TOOLS had ten thousand users and a waiting
               list.
             </p>
             <p>
-              Today Lumina answers millions of questions every month for
+              Today AIRLY TOOLS answers millions of questions every month for
               students, researchers, developers and curious people everywhere.
               We are a fully remote team of 24 across nine countries, united
               by one belief: searching for knowledge should never be the hard
@@ -110,7 +110,7 @@ export default function AboutPage() {
       <section className="container mx-auto px-4 py-24 md:px-6">
         <SectionHeading
           eyebrow="Team"
-          title="The people behind Lumina"
+          title="The people behind AIRLY TOOLS"
           description="A small crew with a big mission, working from nine countries around the world."
         />
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

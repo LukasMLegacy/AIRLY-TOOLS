@@ -6,7 +6,7 @@ import { Reveal } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "Changelog",
   description:
-    "New features, improvements and fixes shipped to Lumina, updated every few weeks.",
+    "New features, improvements and fixes shipped to AIRLY TOOLS, updated every few weeks.",
 };
 
 const releases = [
@@ -77,7 +77,7 @@ export default function ChangelogPage() {
     <>
       <PageHeader
         eyebrow="Changelog"
-        title="What is new in Lumina"
+        title="What is new in AIRLY TOOLS"
         description="We ship improvements every few weeks. Here is what changed recently."
       />
 

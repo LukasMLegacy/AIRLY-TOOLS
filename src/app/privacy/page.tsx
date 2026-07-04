@@ -5,14 +5,14 @@ import { LegalPage, type LegalSection } from "@/components/legal-page";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Lumina collects, uses and protects your personal data. Privacy is the foundation of our product.",
+    "How AIRLY TOOLS collects, uses and protects your personal data. Privacy is the foundation of our product.",
 };
 
 const sections: LegalSection[] = [
   {
     heading: "Who we are",
     paragraphs: [
-      "Lumina is operated by Lumina Labs Inc., 548 Market Street, San Francisco, CA 94104, United States. For users in the European Economic Area, Lumina Labs Inc. acts as the data controller for the personal data described in this policy. You can reach our privacy team at privacy@lumina.search.",
+      "AIRLY TOOLS is operated by Airly Tools Inc., 548 Market Street, San Francisco, CA 94104, United States. For users in the European Economic Area, Airly Tools Inc. acts as the data controller for the personal data described in this policy. You can reach our privacy team at privacy@airly.tools.",
     ],
   },
   {
@@ -57,7 +57,7 @@ const sections: LegalSection[] = [
   {
     heading: "Sharing with third parties",
     paragraphs: [
-      "We share data only with service providers that help us operate Lumina, such as cloud hosting, payment processing and email delivery. Each provider is bound by contract to process data only on our instructions and to protect it appropriately. We may also disclose data if required by law, court order or to protect the rights and safety of our users. If Lumina is ever involved in a merger or acquisition, we will notify you before your data is transferred.",
+      "We share data only with service providers that help us operate AIRLY TOOLS, such as cloud hosting, payment processing and email delivery. Each provider is bound by contract to process data only on our instructions and to protect it appropriately. We may also disclose data if required by law, court order or to protect the rights and safety of our users. If AIRLY TOOLS is ever involved in a merger or acquisition, we will notify you before your data is transferred.",
     ],
   },
   {
@@ -75,13 +75,13 @@ const sections: LegalSection[] = [
   {
     heading: "Your rights",
     paragraphs: [
-      "Depending on where you live, you may have the right to access, correct, delete or export your personal data, to object to or restrict certain processing and to lodge a complaint with a supervisory authority. You can exercise most of these rights directly from the privacy dashboard in your account. For anything else, email privacy@lumina.search and we will respond within 30 days.",
+      "Depending on where you live, you may have the right to access, correct, delete or export your personal data, to object to or restrict certain processing and to lodge a complaint with a supervisory authority. You can exercise most of these rights directly from the privacy dashboard in your account. For anything else, email privacy@airly.tools and we will respond within 30 days.",
     ],
   },
   {
     heading: "Children",
     paragraphs: [
-      "Lumina is not directed at children under 16 and we do not knowingly collect personal data from them. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.",
+      "AIRLY TOOLS is not directed at children under 16 and we do not knowingly collect personal data from them. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.",
     ],
   },
   {
@@ -93,7 +93,7 @@ const sections: LegalSection[] = [
   {
     heading: "Contact",
     paragraphs: [
-      "For any privacy related question or request, contact our privacy team at privacy@lumina.search or write to Lumina Labs Inc., 548 Market Street, San Francisco, CA 94104, United States.",
+      "For any privacy related question or request, contact our privacy team at privacy@airly.tools or write to Airly Tools Inc., 548 Market Street, San Francisco, CA 94104, United States.",
     ],
   },
 ];
@@ -103,7 +103,7 @@ export default function PrivacyPage() {
     <LegalPage
       title="Privacy Policy"
       updated="June 1, 2026"
-      intro="Privacy is not an afterthought at Lumina, it is the reason we exist. This policy explains what data we collect, why we collect it, how we protect it and the rights you have over it."
+      intro="Privacy is not an afterthought at AIRLY TOOLS, it is the reason we exist. This policy explains what data we collect, why we collect it, how we protect it and the rights you have over it."
       sections={sections}
     />
   );
