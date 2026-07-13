@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import Loader from "@/components/box-loader";
 import { Button } from "@/components/ui/button";
@@ -34,6 +35,11 @@ function delay(ms: number) {
 
 export function GoCheckout({ plan }: { plan: string }) {
   const [error, setError] = React.useState<string | null>(null);
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   React.useEffect(() => {
     if (error) {
@@ -84,7 +90,7 @@ export function GoCheckout({ plan }: { plan: string }) {
 
   if (error) {
     return (
-      <div className="flex min-h-[60vh] flex-col items-center justify-center px-4 text-center">
+      <div className="flex min-h-screen flex-col items-center justify-center bg-white px-4 text-center">
         <p className="text-muted-foreground">{error}</p>
         <Button asChild className="mt-6">
           <Link href="/pricing">View all plans</Link>
@@ -93,20 +99,25 @@ export function GoCheckout({ plan }: { plan: string }) {
     );
   }
 
-  return (
-    <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white px-4">
-      <div className="flex h-32 w-full items-center justify-center overflow-hidden">
-        <Loader variant="green" />
-      </div>
+  if (!mounted) {
+    return null;
+  }
 
-      <div className="mt-6 text-center">
-        <p className="text-lg font-medium text-neutral-900">
-          Redirecting to secure checkout
-        </p>
-        <p className="mt-2 text-sm text-neutral-500">
-          Please wait while we connect you to Stripe.
-        </p>
+  return createPortal(
+    <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white px-4">
+      <div className="flex flex-col items-center gap-8">
+        <Loader variant="green" />
+
+        <div className="text-center">
+          <p className="text-lg font-medium text-neutral-900">
+            Redirecting to secure checkout
+          </p>
+          <p className="mt-2 text-sm text-neutral-500">
+            Please wait while we connect you to Stripe.
+          </p>
+        </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

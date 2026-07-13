@@ -116,7 +116,13 @@
 }
 
 .box-loader-stage {
-  overflow: hidden;
+  --size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(var(--size) * 3);
+  min-width: calc(var(--size) * 3);
+  overflow: visible;
 }
 
 @keyframes box1 {
