@@ -6,7 +6,7 @@ import Loader from "@/components/box-loader";
 import { Button } from "@/components/ui/button";
 import { getPriceIdByPlanSlug } from "@/lib/pricing";
 
-const MIN_LOADING_MS = 4000;
+const MIN_LOADING_MS = 8000;
 
 async function startCheckout(priceId: string): Promise<string> {
   const res = await fetch("/api/stripe/checkout", {
@@ -34,6 +34,19 @@ function delay(ms: number) {
 
 export function GoCheckout({ plan }: { plan: string }) {
   const [error, setError] = React.useState<string | null>(null);
+
+  React.useEffect(() => {
+    if (error) {
+      return;
+    }
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [error]);
 
   React.useEffect(() => {
     const priceId = getPriceIdByPlanSlug(plan);
@@ -81,10 +94,12 @@ export function GoCheckout({ plan }: { plan: string }) {
   }
 
   return (
-    <div className="flex min-h-[60vh] flex-col items-center justify-center px-4 text-center">
-      <Loader />
-      <p className="mt-8 text-lg font-medium">Redirecting to secure checkout</p>
-      <p className="mt-2 text-sm text-muted-foreground">
+    <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white px-4 text-center">
+      <Loader variant="light" />
+      <p className="mt-8 text-lg font-medium text-neutral-900">
+        Redirecting to secure checkout
+      </p>
+      <p className="mt-2 text-sm text-neutral-500">
         Please wait while we connect you to Stripe.
       </p>
     </div>

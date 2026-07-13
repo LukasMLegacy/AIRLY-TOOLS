@@ -83,6 +83,22 @@
   --translateZ: calc(var(--size) * 3 * -1);
 }
 
+.boxes-light .face {
+  --background: #e5e5e5;
+}
+
+.boxes-light .face-right {
+  --background: #a3a3a3;
+}
+
+.boxes-light .face-top {
+  --background: #d4d4d4;
+}
+
+.boxes-light .face-back {
+  --background: #f5f5f5;
+}
+
 @keyframes box1 {
   0%,
   50% {

@@ -1,11 +1,17 @@
 import type React from "react";
 
+import { cn } from "@/lib/utils";
+
 import "./box-loader.css";
 
-const Loader: React.FC = () => {
+type LoaderProps = {
+  variant?: "default" | "light";
+};
+
+const Loader: React.FC<LoaderProps> = ({ variant = "default" }) => {
   return (
     <div className="relative">
-      <div className="boxes">
+      <div className={cn("boxes", variant === "light" && "boxes-light")}>
         <div className="box box-1">
           <div className="face face-front" />
           <div className="face face-right" />
