@@ -108,8 +108,9 @@ export function BackgroundPaths({
                         transition={{ delay: 0.8, duration: 0.8 }}
                         className="mx-auto mb-10 max-w-2xl text-lg text-neutral-600 dark:text-neutral-400 sm:text-xl"
                     >
-                        Ask anything in plain language and get instant answers
-                        with trusted sources. Searching has never been easier.
+                        Nelson Digital FZ LLC works with businesses who want
+                        sharper SEO, stronger visibility, and marketing
+                        decisions grounded in data instead of guesswork.
                     </motion.p>
 
                     <div
@@ -126,9 +127,9 @@ export function BackgroundPaths({
                             group-hover:-translate-y-0.5 border border-black/10 dark:border-white/10
                             hover:shadow-md dark:hover:shadow-neutral-800/50"
                         >
-                            <Link href="/pricing">
+                            <Link href="/features">
                                 <span className="opacity-90 group-hover:opacity-100 transition-opacity">
-                                    Start Searching Free
+                                    View Services
                                 </span>
                                 <span
                                     className="ml-3 opacity-70 group-hover:opacity-100 group-hover:translate-x-1.5 

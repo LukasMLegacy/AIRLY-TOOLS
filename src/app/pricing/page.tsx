@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { PageHeader } from "@/components/page-header";
-import { PricingPlans } from "@/components/pricing-plans";
+import { PricingCheckout } from "@/components/pricing-checkout";
 import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/reveal";
 import {
@@ -14,39 +14,39 @@ import {
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple, transparent pricing for AIRLY TOOLS. Start free, upgrade when you are ready. No hidden fees, cancel anytime.",
+    "SEO monitoring from $99/mo, managed execution from $185/mo, and premium multiple channels programmes from $271/mo. Every plan includes concrete deliverables: audits, fixes, Ads optimisation, and LLM visibility.",
 };
 
 const billingFaq = [
   {
-    question: "Can I try Pro before paying?",
+    question: "How does checkout work?",
     answer:
-      "Yes. Every new account gets a 14 day Pro trial with full access to all features. No credit card required to start.",
+      "Click Subscribe on any plan and you'll be redirected to Stripe Checkout, a secure hosted payment page. After payment, you'll land on a confirmation page and receive a receipt by email. No account creation required on our site.",
   },
   {
     question: "What payment methods do you accept?",
     answer:
-      "We accept all major credit and debit cards, PayPal, Apple Pay and Google Pay. Enterprise customers can pay by invoice.",
+      "Stripe Checkout accepts major credit and debit cards. Additional payment methods may appear depending on your region. All transactions are processed securely by Stripe.",
   },
   {
-    question: "Can I cancel at any time?",
+    question: "Can I cancel or change my subscription?",
     answer:
-      "Absolutely. You can cancel your subscription from your account settings at any moment. You keep Pro access until the end of your billing period and we never charge you again after that.",
+      "Yes. Subscriptions are managed through the Stripe Customer Portal, where you can cancel, update your payment method, or view invoices. Cancel anytime. Your access continues until the end of the current billing period.",
   },
   {
-    question: "What happens if I go over the Free plan limit?",
+    question: "What's the difference between Standard and Premium?",
     answer:
-      "Nothing bad. AIRLY TOOLS keeps working as a regular search engine and your AI answer allowance refills at the start of the next month. You can upgrade whenever you want unlimited answers.",
+      "Standard includes everything in Basic plus direct execution: SEO fixes implemented, Google Ads optimisation, landing page CRO, and competitor gap analysis. Premium adds a dedicated senior strategist, an LLM visibility programme, a 48 hour SLA on critical changes, a 90 day growth roadmap, executive ROI reporting, and a priority implementation queue.",
   },
   {
-    question: "Do you offer discounts for students or nonprofits?",
+    question: "What does the service multiplier mean?",
     answer:
-      "Yes. Students and verified nonprofit organizations get 50% off the Pro plan. Contact our support team with proof of status and we will set you up.",
+      "The multiplier (1x, 2x, 3x, or 5x) is how many active services from our catalog we execute for you simultaneously. For example, Standard 2x covers two services, such as SEO and Google Ads, at the same time.",
   },
   {
-    question: "Is there a refund policy?",
+    question: "Is Basic a subscription or a one time purchase?",
     answer:
-      "If you are not happy with Pro within the first 30 days, write to us and we will refund you in full. No questions asked.",
+      "Basic is a monthly subscription ($99/mo) covering technical SEO audits, rank tracking, crawl alerts, competitor snapshots, and a monthly action digest. It does not include direct implementation. Upgrade to Standard or Premium when you want us executing fixes and campaigns for you.",
   },
 ];
 
@@ -55,12 +55,12 @@ export default function PricingPage() {
     <>
       <PageHeader
         eyebrow="Pricing"
-        title="Simple pricing, no surprises"
-        description="Start free and upgrade when you are ready. Every plan includes cited answers and privacy by default."
+        title="Plans that scale with your ambition"
+        description="Start with monitoring, then add managed execution as you grow. Every plan is billed monthly through Stripe with no hidden fees."
       />
 
       <section className="container mx-auto px-4 py-24 md:px-6">
-        <PricingPlans />
+        <PricingCheckout />
       </section>
 
       <section className="border-t border-black/5 bg-neutral-50 py-24 dark:border-white/10 dark:bg-neutral-900/40">

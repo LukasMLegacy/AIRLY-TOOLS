@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
+  BarChart3,
   Brain,
   Globe,
-  MessageSquare,
+  Megaphone,
   Search,
-  ShieldCheck,
   Sparkles,
-  Zap,
+  Target,
 } from "lucide-react";
 
 import { BackgroundPaths } from "@/components/hero";
@@ -17,7 +17,7 @@ import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "AIRLY TOOLS | AI Search That Understands You",
+  title: "Nelson Digital FZ LLC | Digital Marketing & Consulting",
 };
 
 const trustedBy = [
@@ -31,96 +31,96 @@ const trustedBy = [
 
 const steps = [
   {
-    icon: MessageSquare,
-    title: "Ask in your own words",
+    icon: Search,
+    title: "Discover your market",
     description:
-      "Type a question the way you would ask a friend. No keywords, no operators, no tricks required.",
+      "We map your competitive set, search demand, and current visibility across Google, paid channels, and AI search surfaces.",
   },
   {
-    icon: Brain,
-    title: "AIRLY TOOLS understands intent",
+    icon: Target,
+    title: "Plan with clarity",
     description:
-      "Our AI reads between the lines, figures out what you actually mean and scans millions of sources in real time.",
+      "You receive a prioritised roadmap with ranked recommendations, effort estimates, and clear milestones without inflated retainers.",
   },
   {
     icon: Sparkles,
-    title: "Get a clear answer",
+    title: "Execute and compound",
     description:
-      "Receive one concise answer with citations you can verify, instead of ten blue links you have to read yourself.",
+      "We launch SEO, Google Ads, landing pages, and LLM visibility work, then optimise from live signals so growth compounds over time.",
   },
 ];
 
 const features = [
   {
     icon: Search,
-    title: "Semantic search",
+    title: "SEO & search visibility",
     description:
-      "AIRLY TOOLS understands meaning, not just keywords. Ask vague questions and still get precise results.",
+      "Technical audits, on page optimisation, local SEO, and keyword research structured around the queries that move revenue.",
   },
   {
-    icon: Zap,
-    title: "Instant answers",
+    icon: Megaphone,
+    title: "Google Ads & PPC",
     description:
-      "Median response time under one second. Answers arrive before you finish reaching for your coffee.",
+      "Search, display, and shopping campaigns with disciplined budget pacing, creative rotation, and conversion focused optimisation.",
   },
   {
     icon: Globe,
-    title: "The whole web, one box",
+    title: "Landing pages & CRO",
     description:
-      "Products, papers, news, code and more. One search box that covers everything you care about.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Privacy by default",
-    description:
-      "No ad tracking, no selling your data, no creepy profiles. Your searches belong to you.",
+      "Conversion focused landing pages, A/B testing, and funnel diagnostics that turn qualified traffic into enquiries and sales.",
   },
   {
     icon: Brain,
-    title: "AI summaries",
+    title: "LLM & AI search visibility",
     description:
-      "Long articles condensed into a few sentences with sources attached, so you can decide what to read deeply.",
+      "Brand presence in ChatGPT, Perplexity, and AI overviews so your business shows up where people search next.",
   },
   {
-    icon: MessageSquare,
-    title: "Follow up naturally",
+    icon: Sparkles,
+    title: "Content & brand strategy",
     description:
-      "Refine any answer with a follow up question. AIRLY TOOLS remembers the context of your conversation.",
+      "Topic clusters, editorial calendars, and positioning that balance evergreen education with conversion moments.",
+  },
+  {
+    icon: BarChart3,
+    title: "Analytics & performance",
+    description:
+      "Dashboards, attribution reviews, and post campaign retrospectives so every optimisation cycle teaches something durable.",
   },
 ];
 
 const stats = [
-  { value: "40K+", label: "Active users" },
-  { value: "12M", label: "Questions answered" },
-  { value: "0.8s", label: "Median answer time" },
-  { value: "99.9%", label: "Uptime" },
+  { value: "120+", label: "Clients served" },
+  { value: "340", label: "Campaigns delivered" },
+  { value: "3.2x", label: "Avg. traffic lift" },
+  { value: "94%", label: "Client retention" },
 ];
 
 const testimonials = [
   {
     quote:
-      "I stopped opening ten tabs to compare products. AIRLY TOOLS gives me the comparison in one answer with sources. It saves me hours every week.",
+      "Nelson Digital gave us a ranked SEO roadmap in week one. Six months later our organic traffic tripled and Google Ads finally pays for itself.",
     name: "Sarah Chen",
-    role: "Product Manager at Northwind",
+    role: "Marketing Director at Northwind",
   },
   {
     quote:
-      "As a researcher I was skeptical about AI answers. The citations changed my mind. I can verify everything in one click.",
+      "They pressure tested our agency's work and found gaps we missed for two years. Honest, data driven, and no buzzword decks.",
     name: "Dr. Miguel Alvarez",
-    role: "Research Scientist",
+    role: "Founder, Alvarez Consulting",
   },
   {
     quote:
-      "Our whole support team switched to AIRLY TOOLS. Finding documentation and past solutions is now instant instead of a ten minute hunt.",
+      "Our landing pages used to convert at 1.2%. After Nelson Digital's CRO work we're at 4.8% with the same ad spend and nearly five times the leads.",
     name: "Emma Kowalski",
-    role: "Head of Support at Globex",
+    role: "Head of Growth at Globex",
   },
 ];
 
 export default function HomePage() {
   return (
     <>
-      <BackgroundPaths title="AIRLY TOOLS" />
+      <BackgroundPaths title="Nelson Digital" />
 
       <section className="border-y border-black/5 bg-neutral-50 py-12 dark:border-white/10 dark:bg-neutral-900/40">
         <div className="container mx-auto px-4 md:px-6">
@@ -145,8 +145,8 @@ export default function HomePage() {
       <section className="container mx-auto px-4 py-24 md:px-6">
         <SectionHeading
           eyebrow="How it works"
-          title="From question to answer in seconds"
-          description="Three simple steps stand between you and exactly what you were looking for."
+          title="From audit to measurable growth"
+          description="Three phases that turn strategy into weekly action and compounding results."
         />
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           {steps.map((step, i) => (
@@ -172,7 +172,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeading
             eyebrow="See it in action"
-            title="One question. One answer. Done."
+            title="One audit. Clear priorities. Real results."
           />
           <Reveal className="mx-auto mt-14 max-w-3xl" delay={0.1}>
             <div className="overflow-hidden rounded-2xl border border-black/5 bg-white shadow-xl dark:border-white/10 dark:bg-neutral-900">
@@ -185,22 +185,23 @@ export default function HomePage() {
                 <div className="flex items-center gap-3 rounded-xl border border-black/10 px-4 py-3 dark:border-white/15">
                   <Search className="h-5 w-5 text-muted-foreground" />
                   <span className="text-sm md:text-base">
-                    best lightweight laptop for travel under $1000
+                    SEO visibility audit for commercial plumbing services, Dubai
                   </span>
                 </div>
                 <div className="mt-6 rounded-xl bg-neutral-50 p-5 dark:bg-neutral-800/60">
                   <div className="flex items-center gap-2 text-sm font-semibold">
                     <Sparkles className="h-4 w-4" />
-                    AIRLY TOOLS answer
+                    Nelson Digital summary
                   </div>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-                    Based on 27 recent reviews, the best pick right now is the
-                    Zephyr Air 13 at $949. It weighs 1.1 kg, lasts 18 hours on
-                    battery and handles everyday work with ease. If you need
-                    more ports, the Nova Book 14 at $899 is a close second.
+                    47 ranking opportunities identified across local and
+                    commercial intent. Top priority: fix technical crawl
+                    errors, launch Google Business Profile optimisation, and
+                    build three service landing pages. Projected 2.8x organic
+                    traffic within 90 days based on comparable engagements.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    {["techreview.com", "laptopmag.com", "wired.com"].map(
+                    {["Technical SEO", "Local SEO", "Google Ads", "LLM listing"].map(
                       (source) => (
                         <span
                           key={source}
@@ -220,9 +221,9 @@ export default function HomePage() {
 
       <section className="container mx-auto px-4 py-24 md:px-6">
         <SectionHeading
-          eyebrow="Features"
-          title="Everything you need, nothing you dread"
-          description="Built from the ground up for people who value their time and their privacy."
+          eyebrow="Services"
+          title="Everything your growth needs"
+          description="SEO, paid media, landing pages, and AI search visibility in one coherent plan across discovery and conversion."
         />
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, i) => (
@@ -242,7 +243,7 @@ export default function HomePage() {
         <Reveal className="mt-12 text-center">
           <Button variant="outline" size="lg" asChild>
             <Link href="/features">
-              Explore all features
+              Explore all services
               <span aria-hidden>→</span>
             </Link>
           </Button>
@@ -265,7 +266,7 @@ export default function HomePage() {
       <section className="container mx-auto px-4 py-24 md:px-6">
         <SectionHeading
           eyebrow="Testimonials"
-          title="People love searching again"
+          title="Operators trust our recommendations"
         />
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           {testimonials.map((testimonial, i) => (

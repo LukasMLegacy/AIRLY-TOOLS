@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
+import { ChangelogTimeline } from "@/components/changelog-timeline";
 import { PageHeader } from "@/components/page-header";
-import { Reveal } from "@/components/reveal";
 
 export const metadata: Metadata = {
   title: "Changelog",
   description:
-    "New features, improvements and fixes shipped to AIRLY TOOLS, updated every few weeks.",
+    "Agency milestones, service updates, and client wins from Nelson Digital FZ LLC since 2020.",
 };
 
 const releases = [
@@ -15,9 +15,9 @@ const releases = [
     date: "June 18, 2026",
     tag: "New",
     highlights: [
-      "Team workspaces are now generally available on the Enterprise plan.",
-      "Collections can be exported to PDF and Markdown.",
-      "Answer generation is 30% faster on complex research questions.",
+      "LLM visibility service launched with brand presence in ChatGPT, Perplexity, and AI overviews.",
+      "Enterprise Programme now includes vendor oversight and quarterly executive reviews.",
+      "New landing page CRO framework with built in A/B testing recommendations.",
     ],
   },
   {
@@ -25,9 +25,9 @@ const releases = [
     date: "May 2, 2026",
     tag: "Improved",
     highlights: [
-      "Academic mode now formats citations in APA, MLA and Chicago styles.",
-      "Added support for 8 new languages including Korean and Turkish.",
-      "Redesigned mobile apps with a cleaner answer view.",
+      "Google Ads management expanded to include Performance Max and shopping campaigns.",
+      "Technical SEO audit template updated with Core Web Vitals and AI crawlability checks.",
+      "Monthly reporting dashboards redesigned for clearer attribution insights.",
     ],
   },
   {
@@ -35,9 +35,9 @@ const releases = [
     date: "March 21, 2026",
     tag: "New",
     highlights: [
-      "Developer mode: search documentation and code with syntax aware answers.",
-      "Browser extension for Safari joins Chrome and Firefox.",
-      "You can now pin favorite sources to rank them higher in your results.",
+      "Growth Retainer package launched with SEO, Ads, and content under one engagement.",
+      "Added social media growth as a standalone service offering.",
+      "Client portal for real time campaign performance tracking.",
     ],
   },
   {
@@ -45,9 +45,9 @@ const releases = [
     date: "February 5, 2026",
     tag: "Improved",
     highlights: [
-      "Follow up questions now remember longer conversations.",
-      "EU only data storage option for European users.",
-      "Dark mode contrast improvements across the whole app.",
+      "Visibility Audit now includes LLM presence assessment and competitor AI ranking.",
+      "Expanded international campaign management to 12 new markets.",
+      "Phased engagement model refined with clearer milestone definitions.",
     ],
   },
   {
@@ -55,10 +55,10 @@ const releases = [
     date: "December 10, 2025",
     tag: "Major",
     highlights: [
-      "Brand new answer engine with citations on every single claim.",
-      "Median answer time dropped below one second worldwide.",
-      "Collections: save, organize and share your research.",
-      "Complete visual redesign of web and mobile apps.",
+      "Nelson Digital FZ LLC formally established in the United Arab Emirates.",
+      "Full service offering launched: SEO, Google Ads, landing pages, and consulting.",
+      "First 50 client engagements completed with 3.2x average traffic lift.",
+      "Website and brand identity refreshed at nelsondigital.shop.",
     ],
   },
   {
@@ -66,8 +66,88 @@ const releases = [
     date: "October 3, 2025",
     tag: "Improved",
     highlights: [
-      "Personal context ranking enters public beta.",
-      "New privacy dashboard: see and delete everything we store, in one place.",
+      "Digital marketing consultancy practice opened for strategy only engagements.",
+      "Keyword research methodology standardised across all SEO programmes.",
+    ],
+  },
+  {
+    version: "1.7",
+    date: "June 14, 2025",
+    tag: "New",
+    highlights: [
+      "Landing page design and CRO added as a core service line.",
+      "First enterprise client signed across three regional markets.",
+      "Analytics dashboards standardised with GA4 and conversion event mapping.",
+    ],
+  },
+  {
+    version: "1.6",
+    date: "November 8, 2024",
+    tag: "Improved",
+    highlights: [
+      "Early LLM visibility research programme launched for select clients.",
+      "Google Ads management expanded to shopping and remarketing campaigns.",
+      "Technical SEO audit playbook updated with structured data and indexation checks.",
+    ],
+  },
+  {
+    version: "1.5",
+    date: "April 22, 2024",
+    tag: "New",
+    highlights: [
+      "Growth Retainer concept introduced for ongoing SEO and paid media execution.",
+      "Content strategy service formalised with topic cluster planning.",
+      "Client retention crossed 90% for the first time.",
+    ],
+  },
+  {
+    version: "1.4",
+    date: "September 5, 2023",
+    tag: "Improved",
+    highlights: [
+      "International SEO engagements opened for clients targeting multiple countries.",
+      "Competitor gap analysis framework added to all audit deliverables.",
+      "Team grew to five specialists across SEO, paid media, and analytics.",
+    ],
+  },
+  {
+    version: "1.3",
+    date: "February 17, 2023",
+    tag: "New",
+    highlights: [
+      "Visibility Audit product launched as a structured entry engagement.",
+      "Local SEO programmes added for multi location businesses.",
+      "First published case study documenting a 2.4x organic traffic lift.",
+    ],
+  },
+  {
+    version: "1.2",
+    date: "July 11, 2022",
+    tag: "Improved",
+    highlights: [
+      "Google Ads management became a standalone service offering.",
+      "Monthly reporting templates introduced with channel level ROI tracking.",
+      "Phased engagement model adopted to reduce risk for new clients.",
+    ],
+  },
+  {
+    version: "1.1",
+    date: "March 3, 2021",
+    tag: "New",
+    highlights: [
+      "First three retainer clients signed for ongoing SEO execution.",
+      "On page optimisation and technical fixes added to delivery scope.",
+      "Consulting practice named Nelson Digital and brand identity established.",
+    ],
+  },
+  {
+    version: "1.0",
+    date: "January 15, 2020",
+    tag: "Major",
+    highlights: [
+      "Nelson Digital founded as an independent SEO and digital marketing practice.",
+      "First client engagements focused on keyword research and rank tracking.",
+      "Core belief established: data over guesswork, honest recommendations only.",
     ],
   },
 ];
@@ -77,47 +157,11 @@ export default function ChangelogPage() {
     <>
       <PageHeader
         eyebrow="Changelog"
-        title="What is new in AIRLY TOOLS"
-        description="We ship improvements every few weeks. Here is what changed recently."
+        title="Agency updates and milestones"
+        description="Service launches, methodology improvements, and key wins since 2020."
       />
 
-      <section className="container mx-auto px-4 py-24 md:px-6">
-        <div className="mx-auto max-w-3xl">
-          <ol className="relative space-y-12 border-l border-black/10 pl-8 dark:border-white/15">
-            {releases.map((release) => (
-              <li key={release.version} className="relative">
-                <span className="absolute -left-[41px] top-1 flex h-6 w-6 items-center justify-center rounded-full border border-black/10 bg-white dark:border-white/15 dark:bg-neutral-900">
-                  <span className="h-2 w-2 rounded-full bg-neutral-900 dark:bg-white" />
-                </span>
-                <Reveal>
-                  <div className="flex flex-wrap items-center gap-3">
-                    <h2 className="text-2xl font-bold tracking-tight">
-                      Version {release.version}
-                    </h2>
-                    <span className="rounded-full bg-neutral-900 px-3 py-1 text-xs font-semibold text-white dark:bg-white dark:text-neutral-900">
-                      {release.tag}
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      {release.date}
-                    </span>
-                  </div>
-                  <ul className="mt-4 space-y-2">
-                    {release.highlights.map((highlight) => (
-                      <li
-                        key={highlight}
-                        className="flex items-start gap-3 text-muted-foreground"
-                      >
-                        <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-neutral-400 dark:bg-neutral-600" />
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                </Reveal>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
+      <ChangelogTimeline releases={releases} />
     </>
   );
 }

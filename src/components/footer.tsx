@@ -28,9 +28,9 @@ function LinkedinIcon({ className }: { className?: string }) {
 
 const columns = [
   {
-    title: "Product",
+    title: "Services",
     links: [
-      { href: "/features", label: "Features" },
+      { href: "/features", label: "Services" },
       { href: "/pricing", label: "Pricing" },
       { href: "/changelog", label: "Changelog" },
       { href: "/faq", label: "FAQ" },
@@ -63,8 +63,8 @@ export function Footer() {
               <Logo />
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-              AI search that understands what you mean. Find anything on the
-              web in seconds at airly.tools.
+              Digital marketing and consulting. Based in the United Arab
+              Emirates. Grow online at nelsondigital.shop.
             </p>
             <div className="mt-6 flex gap-4">
               <a
@@ -112,10 +112,10 @@ export function Footer() {
 
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-black/5 pt-8 dark:border-white/10 md:flex-row">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Airly Tools Inc. All rights reserved.
+            © {new Date().getFullYear()} Nelson Digital FZ LLC. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Made for people who search smarter.
+            Marketing that earns attention.
           </p>
         </div>
       </div>

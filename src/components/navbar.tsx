@@ -10,7 +10,7 @@ import { Logo } from "@/components/logo";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "/features", label: "Features" },
+  { href: "/features", label: "Services" },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
   { href: "/faq", label: "FAQ" },

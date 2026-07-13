@@ -9,43 +9,43 @@ import { Reveal } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet the team behind AIRLY TOOLS and learn why we believe searching the web should feel effortless.",
+    "Nelson Digital FZ LLC is a digital marketing and consulting practice built for operators who want measurable online growth.",
 };
 
 const values = [
   {
     icon: Compass,
-    title: "Answers over links",
+    title: "Data over guesswork",
     description:
-      "We measure success by how fast you close the tab, not how long you stay. Search should end with an answer, not a list of homework.",
+      "Every recommendation spells out why it matters, what it costs in effort, and how we will know it worked. No buzzword decks, no inflated retainers.",
   },
   {
     icon: Lock,
-    title: "Privacy is not a feature",
+    title: "Phased, transparent engagements",
     description:
-      "It is the foundation. We built AIRLY TOOLS without ad tracking from day one, so we never have to choose between you and advertisers.",
+      "We favour phased agreements so both sides validate fit before scaling spend. Economics stay transparent and incentives align around outcomes.",
   },
   {
     icon: Lightbulb,
-    title: "Curiosity deserves speed",
+    title: "SEO + paid + content as one system",
     description:
-      "Every second spent waiting is a thought interrupted. We obsess over latency so your ideas keep flowing.",
+      "Tactics should not work in silos. We combine organic search, paid acquisition, and content so marketing stays coherent from first impression to conversion.",
   },
   {
     icon: Heart,
-    title: "Honest by design",
+    title: "Honest recommendations",
     description:
-      "Every answer shows its sources. When we are not sure, we say so. Trust is earned one citation at a time.",
+      "Consultations stay candid. You get plain language advice, ranked priorities, and nothing padded for the sake of a longer contract.",
   },
 ];
 
 const team = [
-  { name: "Alex Rivera", role: "Cofounder and CEO", initials: "AR" },
-  { name: "Priya Sharma", role: "Cofounder and CTO", initials: "PS" },
-  { name: "Tomas Novak", role: "Head of AI", initials: "TN" },
-  { name: "Lena Fischer", role: "Head of Design", initials: "LF" },
-  { name: "David Okafor", role: "Head of Engineering", initials: "DO" },
-  { name: "Maria Santos", role: "Head of Operations", initials: "MS" },
+  { name: "Ryan Nelson", role: "Founder & Strategy Lead", initials: "RN" },
+  { name: "Olga Nelson", role: "Cofounder & Operations", initials: "ON" },
+  { name: "Tomas Novak", role: "Head of SEO", initials: "TN" },
+  { name: "Lena Fischer", role: "Head of Paid Media", initials: "LF" },
+  { name: "David Okafor", role: "Head of Analytics", initials: "DO" },
+  { name: "Maria Santos", role: "Client Success Lead", initials: "MS" },
 ];
 
 export default function AboutPage() {
@@ -53,8 +53,8 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About us"
-        title="We think search is broken. We are fixing it."
-        description="AIRLY TOOLS started with a simple frustration: finding anything online meant wading through ads, SEO spam and ten open tabs."
+        title="Built for practitioners"
+        description="Nelson Digital FZ LLC exists so operators never have to decode buzzwords alone. We specialise in marketing work that lifts online presence and keeps teams rowing toward measurable outcomes."
       />
 
       <section className="container mx-auto px-4 py-24 md:px-6">
@@ -62,25 +62,24 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold tracking-tight">Our story</h2>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-muted-foreground">
             <p>
-              In 2023, our founders Alex and Priya were building a research
-              tool and realized they spent more time searching for information
-              than using it. Search engines had turned into ad platforms.
-              Results were optimized for clicks, not correctness. Finding a
-              straight answer felt like a small miracle.
+              Nelson Digital started when our founders saw the same pattern
+              repeat across dozens of businesses: stagnant organic curves,
+              uneven brand signals across touchpoints, and campaigns that
+              reported vanity wins while pipelines stayed quiet.
             </p>
             <p>
-              So they built something for themselves: a search box that read
-              the sources, understood the question and replied with one clear,
-              cited answer. Friends asked for access. Then friends of friends.
-              Six months later, AIRLY TOOLS had ten thousand users and a waiting
-              list.
+              We built a consultancy around structured discovery, honest
+              benchmarks, and roadmaps clients can execute internally or with
+              outside partners. Our practice sits at the intersection of search,
+              positioning, and modern funnel design, from SEO and Google Ads to
+              landing pages and LLM visibility.
             </p>
             <p>
-              Today AIRLY TOOLS answers millions of questions every month for
-              students, researchers, developers and curious people everywhere.
-              We are a fully remote team of 24 across nine countries, united
-              by one belief: searching for knowledge should never be the hard
-              part.
+              Today Nelson Digital FZ LLC works with businesses and creators
+              across industries from our base in the United Arab Emirates.
+              Whether you run a lean team or partner with agencies elsewhere,
+              we can own the strategy layer, review vendor output, and keep
+              initiatives pointed at the same north star.
             </p>
           </div>
         </Reveal>
@@ -110,8 +109,8 @@ export default function AboutPage() {
       <section className="container mx-auto px-4 py-24 md:px-6">
         <SectionHeading
           eyebrow="Team"
-          title="The people behind AIRLY TOOLS"
-          description="A small crew with a big mission, working from nine countries around the world."
+          title="The people behind Nelson Digital"
+          description="Experienced marketers and consultants committed to helping businesses grow online responsibly."
         />
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {team.map((member, i) => (

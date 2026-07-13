@@ -5,7 +5,7 @@ import { LegalPage, type LegalSection } from "@/components/legal-page";
 export const metadata: Metadata = {
   title: "Cookie Policy",
   description:
-    "How AIRLY TOOLS uses cookies and similar technologies, and how you can control them.",
+    "How Nelson Digital FZ LLC uses cookies and similar technologies, and how you can control them.",
 };
 
 const sections: LegalSection[] = [
@@ -18,33 +18,36 @@ const sections: LegalSection[] = [
   {
     heading: "How we use cookies",
     paragraphs: [
-      "AIRLY TOOLS uses a deliberately small number of cookies, and none of them are used for advertising. We group them into two categories:",
+      "Nelson Digital FZ LLC uses cookies to keep the Website functioning properly and to understand how visitors interact with our pages. We group them into the following categories:",
     ],
     list: [
-      "Essential cookies: required for the service to work at all. They keep you signed in, remember your session and protect against cross site request forgery. These cannot be switched off.",
-      "Preference cookies: remember your choices such as language, theme and search settings so the service behaves consistently between visits.",
+      "Strictly necessary cookies: required for the Website to work at all. They protect against cross site request forgery and maintain session state. These cannot be switched off.",
+      "Analytics cookies: help us understand how visitors use the Website so we can improve content and navigation. Data is aggregated and does not identify individual users.",
+      "Functional cookies: remember your choices such as language and display preferences so the Website behaves consistently between visits.",
     ],
   },
   {
     heading: "What we do not use",
     paragraphs: [
-      "We do not use advertising cookies, cross site tracking cookies or social media tracking pixels. There are no third party ad networks on any AIRLY TOOLS page. Analytics on our marketing pages are collected through a privacy friendly, cookieless system that stores no personal identifiers.",
+      "We do not use advertising cookies, cross site tracking cookies, or social media tracking pixels for third party ad targeting. There are no third party ad networks on any Nelson Digital page.",
     ],
   },
   {
     heading: "Cookies we set",
-    paragraphs: ["The complete list of cookies used by AIRLY TOOLS:"],
+    paragraphs: ["The cookies used by this Website include:"],
     list: [
-      "airly_session: keeps you signed in to your account. Essential. Expires after 30 days.",
-      "airly_csrf: protects forms against cross site request forgery. Essential. Expires with your session.",
-      "airly_prefs: stores your theme and language preferences. Preference. Expires after 12 months.",
-      "airly_consent: remembers your cookie choices. Essential. Expires after 12 months.",
+      "nd_session: maintains your session state. Strictly necessary. Expires with your session.",
+      "nd_csrf: protects forms against cross site request forgery. Strictly necessary. Expires with your session.",
+      "nd_prefs: stores your display preferences. Functional. Expires after 12 months.",
+      "nd_consent: remembers your cookie choices. Strictly necessary. Expires after 12 months.",
+      "nd_analytics: collects anonymised usage data. Analytics. Expires after 12 months.",
     ],
   },
   {
     heading: "Managing cookies",
     paragraphs: [
-      "You can control preference cookies from the cookie settings link in the footer of our website. You can also configure your browser to block or delete cookies entirely; note that blocking essential cookies will prevent you from signing in. Instructions for managing cookies can be found in the help pages of every major browser.",
+      "You can manage cookies that are not essential through your browser settings. Most browsers allow you to block or delete cookies entirely; note that blocking strictly necessary cookies may affect Website functionality. Instructions for managing cookies can be found in the help pages of every major browser.",
+      "Where required by applicable law, we obtain consent for cookies that are not essential before they are placed on your device.",
     ],
   },
   {
@@ -56,7 +59,7 @@ const sections: LegalSection[] = [
   {
     heading: "Contact",
     paragraphs: [
-      "Questions about our use of cookies? Email privacy@airly.tools and we will be happy to explain.",
+      "Questions about our use of cookies? Email privacy@nelsondigital.shop and we will be happy to explain.",
     ],
   },
 ];
@@ -65,8 +68,8 @@ export default function CookiesPage() {
   return (
     <LegalPage
       title="Cookie Policy"
-      updated="June 1, 2026"
-      intro="This policy explains how AIRLY TOOLS uses cookies and similar technologies. The short version: we use as few as possible and none of them track you around the web."
+      updated="May 22, 2026"
+      intro="This policy explains how Nelson Digital FZ LLC uses cookies and similar technologies on nelsondigital.shop. We use as few as possible and none of them track you around the web for advertising."
       sections={sections}
     />
   );

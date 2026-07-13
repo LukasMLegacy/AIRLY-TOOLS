@@ -16,26 +16,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://airly.tools"),
+  metadataBase: new URL("https://nelsondigital.shop"),
   title: {
-    default: "AIRLY TOOLS | AI Search That Understands You",
-    template: "%s | AIRLY TOOLS",
+    default: "Nelson Digital FZ LLC | Digital Marketing & Consulting",
+    template: "%s | Nelson Digital",
   },
   description:
-    "AIRLY TOOLS is the AI search engine that understands what you mean. Ask anything in plain language and get instant answers with trusted sources. Searching has never been easier.",
+    "Nelson Digital FZ LLC helps businesses grow online through SEO, Google Ads, landing pages, LLM visibility, and data driven digital marketing consulting in the United Arab Emirates.",
   keywords: [
-    "AI search",
-    "search engine",
-    "instant answers",
-    "semantic search",
-    "AI assistant",
+    "SEO agency",
+    "digital marketing",
+    "Google Ads",
+    "landing pages",
+    "LLM visibility",
+    "search engine optimisation",
+    "marketing consulting",
   ],
   openGraph: {
-    title: "AIRLY TOOLS | AI Search That Understands You",
+    title: "Nelson Digital FZ LLC | Digital Marketing & Consulting",
     description:
-      "Ask anything in plain language and get instant answers with trusted sources. Searching has never been easier.",
+      "Grow online with sharper SEO, stronger visibility, and marketing decisions grounded in data instead of guesswork.",
     type: "website",
-    siteName: "AIRLY TOOLS",
+    siteName: "Nelson Digital",
   },
 };
 

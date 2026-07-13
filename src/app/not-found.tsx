@@ -13,7 +13,7 @@ export default function NotFound() {
         404
       </h1>
       <p className="mt-4 text-xl font-semibold">
-        Even our AI could not find this page
+        This page could not be found
       </p>
       <p className="mt-2 max-w-md text-muted-foreground">
         The page you are looking for does not exist or has been moved. Let us
@@ -24,7 +24,7 @@ export default function NotFound() {
           <Link href="/">Back to Home</Link>
         </Button>
         <Button size="lg" variant="outline" asChild>
-          <Link href="/contact">Contact Support</Link>
+          <Link href="/contact">Contact Us</Link>
         </Button>
       </div>
     </div>

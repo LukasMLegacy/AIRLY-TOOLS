@@ -10,52 +10,53 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Free",
-    monthly: 0,
-    yearly: 0,
-    description: "For casual searchers who want a better way to find things.",
-    cta: "Start for Free",
+    name: "Visibility Audit",
+    monthly: 1490,
+    yearly: 1190,
+    description: "For businesses ready to understand where they stand and what to fix first.",
+    cta: "Book an Audit",
     highlighted: false,
     features: [
-      "100 AI answers per month",
-      "Semantic web search",
-      "Citations on every answer",
-      "Browser extension",
-      "Search history for 30 days",
+      "Full SEO & visibility audit",
+      "Technical site review",
+      "Keyword opportunity map",
+      "Competitor analysis",
+      "Prioritised 90 day roadmap",
+      "Kickoff strategy call",
     ],
   },
   {
-    name: "Pro",
-    monthly: 12,
-    yearly: 9,
-    description: "For power users who search all day, every day.",
-    cta: "Get Pro",
+    name: "Growth Retainer",
+    monthly: 3500,
+    yearly: 2800,
+    description: "For operators who want ongoing SEO, ads, and content optimisation.",
+    cta: "Start Growing",
     highlighted: true,
     features: [
-      "Unlimited AI answers",
-      "Conversational follow ups",
-      "Academic and developer modes",
-      "Collections and sharing",
-      "Personal context ranking",
-      "Priority support",
-      "Unlimited search history",
+      "Everything in Visibility Audit",
+      "Ongoing SEO execution",
+      "Google Ads management",
+      "Landing page optimisation",
+      "LLM visibility work",
+      "Monthly performance reporting",
+      "Dedicated account lead",
     ],
   },
   {
-    name: "Enterprise",
+    name: "Enterprise Programme",
     monthly: null,
     yearly: null,
-    description: "For teams and companies that run on knowledge.",
-    cta: "Contact Sales",
+    description: "For teams that need multiple channels programmes with custom scope and SLA.",
+    cta: "Contact Us",
     highlighted: false,
     features: [
-      "Everything in Pro",
-      "Team workspaces",
-      "SSO and SAML",
-      "Admin controls and audit logs",
-      "Custom data connectors",
-      "Dedicated account manager",
-      "99.9% uptime SLA",
+      "Everything in Growth Retainer",
+      "Multi market SEO strategy",
+      "Full funnel paid media",
+      "Custom landing page builds",
+      "Vendor oversight & scorecards",
+      "Executive quarterly reviews",
+      "Priority SLA support",
     ],
   },
 ];
@@ -94,7 +95,7 @@ export function PricingPlans() {
         >
           Yearly
           <span className="ml-2 rounded-full bg-green-100 px-2 py-0.5 text-xs font-semibold text-green-700 dark:bg-green-900/50 dark:text-green-400">
-            Save 25%
+            Save 20%
           </span>
         </span>
       </Reveal>
@@ -144,12 +145,12 @@ export function PricingPlans() {
                           : "text-muted-foreground"
                       )}
                     >
-                      per month
+                      {plan.name === "Visibility Audit" ? "one time" : "per month"}
                     </span>
                   </>
                 )}
               </div>
-              {plan.monthly !== null && yearly && plan.yearly > 0 && (
+              {plan.monthly !== null && yearly && plan.yearly > 0 && plan.name !== "Visibility Audit" && (
                 <p
                   className={cn(
                     "mt-1 text-xs",

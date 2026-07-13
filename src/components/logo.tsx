@@ -20,7 +20,7 @@ export function Logo({
           textClassName
         )}
       >
-        AIRLY TOOLS
+        Nelson Digital
       </span>
     </span>
   );

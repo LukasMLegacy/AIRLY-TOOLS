@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
 import {
-  BookOpen,
+  BarChart3,
   Brain,
-  Code2,
   Globe,
   Layers,
+  Megaphone,
   MessageSquare,
   Search,
-  ShieldCheck,
-  Smartphone,
   Sparkles,
+  Target,
+  TrendingUp,
   Users,
-  Zap,
 } from "lucide-react";
 
 import { PageHeader } from "@/components/page-header";
@@ -20,86 +19,86 @@ import { CtaSection } from "@/components/cta-section";
 import { Reveal } from "@/components/reveal";
 
 export const metadata: Metadata = {
-  title: "Features",
+  title: "Services",
   description:
-    "Explore everything AIRLY TOOLS can do: semantic search, instant answers, AI summaries, privacy by default and much more.",
+    "Nelson Digital offers SEO, Google Ads, landing pages, LLM visibility, content strategy, and analytics for businesses that want measurable online growth.",
 };
 
 const coreFeatures = [
   {
     icon: Search,
-    title: "Semantic search",
+    title: "SEO & search visibility",
     description:
-      "Traditional search matches keywords. AIRLY TOOLS matches meaning. Ask about that movie where time runs backwards and get the right answer, even if you never mention the title. Our models understand context, synonyms and intent, so vague questions still lead to precise results.",
+      "SEO at Nelson Digital is not a checklist handed to an intern. We study your category, the quality bar on the first page, and the business cases behind each cluster of keywords before anyone edits a title tag. Programs include on page optimisation, content planning by intent, site architecture, local visibility, and migration support.",
   },
   {
-    icon: Zap,
-    title: "Instant answers",
+    icon: Megaphone,
+    title: "Google Ads & PPC",
     description:
-      "Waiting is the enemy of curiosity. AIRLY TOOLS answers in under a second for most queries, powered by a globally distributed index and models optimized for speed. You ask, you read, you move on with your day.",
-  },
-  {
-    icon: Sparkles,
-    title: "AI summaries with citations",
-    description:
-      "Every answer comes with sources you can inspect. AIRLY TOOLS condenses long articles, reviews and papers into a few clear sentences and always shows where each claim comes from. Trust, but verify, in one click.",
-  },
-  {
-    icon: MessageSquare,
-    title: "Conversational follow ups",
-    description:
-      "Search is rarely a single question. Ask a follow up and AIRLY TOOLS remembers what you were talking about. Narrow down, compare options or ask for more detail without repeating yourself.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Privacy by default",
-    description:
-      "We do not sell your data, build ad profiles or track you across the web. Searches are encrypted in transit and at rest, and you can wipe your history at any time with a single click.",
+      "Paid media should answer clear business questions: what audiences convert, which creatives fatigue, and where marginal spend still pays. We manage search, shopping, display, and social advertising with budget pacing, flighting, and creative rotation so campaigns stay profitable.",
   },
   {
     icon: Globe,
-    title: "Search everything",
+    title: "Landing pages & CRO",
     description:
-      "The web, news, academic papers, product catalogs, code repositories and forums. AIRLY TOOLS brings them together in one search box so you never have to think about where to look.",
+      "Content supports SEO, ads, and social together. We build conversion focused landing pages with clear narratives, proof points, and A/B testing. Every page is aligned with keyword themes, funnel stage, and the objections your buyers need resolved before they enquire.",
+  },
+  {
+    icon: Brain,
+    title: "LLM & AI search visibility",
+    description:
+      "Search is expanding beyond Google. We help your brand appear in ChatGPT, Perplexity, Google AI overviews, and other LLM surfaces through structured content, authority building, and entity optimisation so you are found where people search next.",
+  },
+  {
+    icon: MessageSquare,
+    title: "Content & brand strategy",
+    description:
+      "Audiences compound when publishing cadence meets genuine curiosity. We design content systems with topic clusters, editorial calendars, and growth loops that balance evergreen education, conversion moments, and community building without burning out your team.",
+  },
+  {
+    icon: BarChart3,
+    title: "Analytics & performance",
+    description:
+      "Decisions need trusted numbers. We tighten tagging, goal definitions, and dashboards so marketing, sales, and leadership see the same story. Post campaign reviews and testing roadmaps ensure every optimisation cycle teaches something durable.",
   },
 ];
 
 const moreFeatures = [
   {
+    icon: Target,
+    title: "Digital marketing consultancy",
+    description:
+      "A seasoned operator in the room. We pressure test plans, interpret vendor reports, and choose between competing channel bets with quarterly war games and executive summaries.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Website visibility & traffic growth",
+    description:
+      "Visibility is more than rankings. We design experiments across search, referrals, social proof, and owned media to lift qualified visits rather than anonymous spikes.",
+  },
+  {
     icon: Layers,
-    title: "Collections",
+    title: "Keyword research",
     description:
-      "Save answers and sources into shareable collections for research projects, trip planning or team knowledge.",
+      "Keyword research is the map for both SEO and paid search. We group terms by intent, difficulty, and business value, then prioritise what to target first.",
   },
   {
-    icon: Code2,
-    title: "Developer mode",
+    icon: Search,
+    title: "Technical SEO audits",
     description:
-      "Search documentation and code with syntax aware results. Copy working snippets straight from the answer.",
-  },
-  {
-    icon: BookOpen,
-    title: "Academic mode",
-    description:
-      "Prioritize peer reviewed sources and get citations formatted for your bibliography.",
-  },
-  {
-    icon: Smartphone,
-    title: "Everywhere you are",
-    description:
-      "Native apps for iOS and Android plus browser extensions for Chrome, Firefox and Safari.",
+      "A technical audit explains why crawlers might underrate your site: speed, indexation, duplicates, structured data, and mobile usability. You receive a prioritised backlog, not a generic PDF.",
   },
   {
     icon: Users,
-    title: "Team workspaces",
+    title: "Social media growth",
     description:
-      "Share collections, searches and answers with your team. Knowledge stays in one place.",
+      "Growing social channels means pairing consistent publishing with community appropriate tone, formats that fit each network, and paid boosts where organic alone plateaus.",
   },
   {
-    icon: Brain,
-    title: "Personal context",
+    icon: Sparkles,
+    title: "Online branding & strategy",
     description:
-      "Optionally let AIRLY TOOLS learn your preferences to rank results the way you would. Fully under your control.",
+      "Brands win when every touchpoint feels intentional. We help articulate positioning, narrative arcs, and guardrails for creators and ambassadors who speak on your behalf online.",
   },
 ];
 
@@ -107,9 +106,9 @@ export default function FeaturesPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Features"
-        title="Search that works the way you think"
-        description="AIRLY TOOLS replaces keyword guessing and endless tabs with one clear answer. Here is everything under the hood."
+        eyebrow="Services"
+        title="Services built for momentum"
+        description="From SEO and Google Ads to landing pages and LLM visibility, we translate strategy into weekly action so early wins fund the heavier lifts that follow."
       />
 
       <section className="container mx-auto px-4 py-24 md:px-6">
@@ -147,7 +146,7 @@ export default function FeaturesPage() {
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeading
             eyebrow="And more"
-            title="Small details, big difference"
+            title="Additional capabilities"
           />
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {moreFeatures.map((feature, i) => (

@@ -14,57 +14,57 @@ import {
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers to the most common questions about AIRLY TOOLS, the AI search engine that understands you.",
+    "Answers to common questions about Nelson Digital's SEO, Google Ads, landing page, and digital marketing services.",
 };
 
 const faqGroups = [
   {
-    title: "Product",
+    title: "Services",
     items: [
       {
-        question: "What exactly is AIRLY TOOLS?",
+        question: "What services does Nelson Digital offer?",
         answer:
-          "AIRLY TOOLS is an AI search engine. Instead of returning a list of links, it reads the most relevant sources for you and replies with one clear answer, complete with citations you can verify. Think of it as a very fast research assistant that lives in your search bar.",
+          "We offer comprehensive digital marketing including SEO, Google Ads and PPC, landing page design and CRO, LLM and AI search visibility, content strategy, social media growth, technical SEO audits, and analytics. Engagements can combine several services or focus on one channel.",
       },
       {
-        question: "How is it different from a regular search engine?",
+        question: "How is LLM visibility different from traditional SEO?",
         answer:
-          "Regular search engines match keywords and rank pages, then leave the reading to you. AIRLY TOOLS understands the meaning of your question, gathers information from multiple sources and synthesizes a direct answer. You get the conclusion first and the links second.",
+          "Traditional SEO optimises for Google and other search engines. LLM visibility focuses on how your brand appears in AI powered tools like ChatGPT, Perplexity, and Google AI overviews. We build entity authority, structured content, and citation worthy resources so AI systems recommend your business.",
       },
       {
-        question: "Can I trust the answers?",
+        question: "Do you manage Google Ads campaigns?",
         answer:
-          "Every answer includes citations that link straight to the original sources, so you can verify any claim in one click. When sources disagree or evidence is thin, AIRLY TOOLS says so instead of guessing. We believe honesty beats confidence.",
+          "Yes. We set up, manage, and optimise Google Ads campaigns including search, shopping, and display. This includes keyword strategy, budget pacing, creative rotation, conversion tracking, and ongoing performance optimisation.",
       },
       {
-        question: "What languages does AIRLY TOOLS support?",
+        question: "How do landing page projects work?",
         answer:
-          "AIRLY TOOLS currently understands questions in more than 30 languages including English, Spanish, German, French, Slovak, Czech, Japanese and Portuguese. Answers are returned in the language you ask in.",
+          "We start with funnel diagnostics and conversion goals, then design and build pages aligned with your keyword themes and ad campaigns. Every project includes A/B testing recommendations and analytics setup so you can measure what converts.",
       },
       {
-        question: "Does AIRLY TOOLS work on mobile?",
+        question: "Can you work alongside our existing agency?",
         answer:
-          "Yes. We have native apps for iOS and Android, and the web app works beautifully in any mobile browser. Your history and collections sync across all devices.",
+          "Absolutely. Many clients hire us to own the strategy layer, review vendor output, and keep initiatives pointed at the same north star. We provide vendor scorecards, quarterly war games, and executive summaries.",
       },
     ],
   },
   {
-    title: "Privacy and data",
+    title: "Process and engagement",
     items: [
       {
-        question: "Do you track my searches?",
+        question: "What does a typical engagement look like?",
         answer:
-          "We store your search history only so you can access it yourself, and you can delete it at any time. We never build advertising profiles, never sell data to third parties and never share your queries with advertisers. Privacy is the foundation of the product.",
+          "Most clients start with a Visibility Audit to establish baseline performance and a prioritised roadmap. From there, we recommend a Growth Retainer for ongoing execution or a custom Enterprise Programme for multiple channel needs. We favour phased agreements so both sides validate fit before scaling.",
       },
       {
-        question: "Are my searches used to train AI models?",
+        question: "How quickly will I see results?",
         answer:
-          "No, not by default. Model improvement uses anonymized, aggregated patterns only, and you can opt out entirely in your settings with a single switch.",
+          "Technical fixes and Google Ads optimisations can show impact within weeks. SEO and content programmes typically show meaningful traffic lifts within 60 to 90 days. We set honest benchmarks upfront and report against them monthly.",
       },
       {
-        question: "Where is my data stored?",
+        question: "Do you work with international clients?",
         answer:
-          "All data is encrypted in transit and at rest and stored in certified data centers in the United States and the European Union. European users can choose EU only storage in their account settings.",
+          "Yes. Nelson Digital FZ LLC is registered in the United Arab Emirates and works with businesses worldwide. We adapt strategies to your target markets and can manage campaigns across multiple regions.",
       },
     ],
   },
@@ -72,19 +72,19 @@ const faqGroups = [
     title: "Account and billing",
     items: [
       {
-        question: "Do I need an account to use AIRLY TOOLS?",
+        question: "What is the minimum commitment?",
         answer:
-          "You can try AIRLY TOOLS without an account. Creating a free account unlocks search history, collections and syncing across devices.",
+          "The Visibility Audit is a one time engagement. Growth Retainers require a three month initial commitment, then continue month to month. Enterprise Programmes are scoped individually with custom terms.",
       },
       {
-        question: "How does the free plan work?",
+        question: "How do I get started?",
         answer:
-          "The free plan includes 100 AI answers per month plus unlimited classic semantic search. The allowance resets at the start of each month and you never get charged automatically.",
+          "Send us a message through the contact form describing your company, what you sell, and what needs to improve online. We read every serious enquiry and reply with next steps, not an automated brochure.",
       },
       {
-        question: "How do I cancel my subscription?",
+        question: "How do I cancel or change my retainer?",
         answer:
-          "Go to account settings, choose Billing and click Cancel subscription. You keep Pro access until the end of the period you paid for. You can also just email support and we will handle it for you.",
+          "Retainers can be adjusted, paused, or cancelled with 30 days written notice after the initial three month period. Contact your account lead or email hello@nelsondigital.shop and we will handle it promptly.",
       },
     ],
   },
@@ -96,7 +96,7 @@ export default function FaqPage() {
       <PageHeader
         eyebrow="FAQ"
         title="Frequently asked questions"
-        description="Everything you might want to know about AIRLY TOOLS. Cannot find your answer? Our team is one message away."
+        description="Everything you might want to know about working with Nelson Digital. Cannot find your answer? Our team is one message away."
       />
 
       <section className="container mx-auto px-4 py-24 md:px-6">
@@ -127,7 +127,7 @@ export default function FaqPage() {
               We are happy to help with anything not covered here.
             </p>
             <Button size="lg" asChild className="mt-6">
-              <Link href="/contact">Contact Support</Link>
+              <Link href="/contact">Get in Touch</Link>
             </Button>
           </Reveal>
         </div>

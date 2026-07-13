@@ -4,100 +4,146 @@ import { LegalPage, type LegalSection } from "@/components/legal-page";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "The terms and conditions that govern your use of AIRLY TOOLS.",
+  description:
+    "Terms and Conditions governing use of the Nelson Digital FZ LLC website and digital marketing consulting services.",
 };
 
 const sections: LegalSection[] = [
   {
-    heading: "Acceptance of terms",
+    heading: "Introduction and acceptance",
     paragraphs: [
-      "By accessing or using AIRLY TOOLS, the AI search service operated by Airly Tools Inc. (referred to as AIRLY TOOLS, we, us or our), you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you must not use the service. If you are using AIRLY TOOLS on behalf of an organization, you represent that you have the authority to bind that organization to these terms.",
+      "These Terms and Conditions constitute a legally binding agreement between you and Nelson Digital FZ LLC, a company incorporated in a United Arab Emirates free zone (the Company, we, us, or our).",
+      "By accessing, browsing, or using the website at https://nelsondigital.shop/, submitting an enquiry through our contact form, or otherwise interacting with our online presence, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree, you must discontinue use of the Website immediately.",
     ],
   },
   {
-    heading: "Description of the service",
+    heading: "Company identification",
     paragraphs: [
-      "AIRLY TOOLS provides an AI powered search engine that processes natural language queries and returns synthesized answers together with citations to original sources. The service is available through our website, mobile applications and browser extensions. We may add, change or remove features at any time as the product evolves.",
-    ],
-  },
-  {
-    heading: "Accounts and eligibility",
-    paragraphs: [
-      "You must be at least 16 years old to create an account. When you register, you agree to provide accurate information and to keep it up to date. You are responsible for maintaining the confidentiality of your login credentials and for all activity that occurs under your account. Notify us immediately at support@airly.tools if you suspect unauthorized use of your account.",
-    ],
-  },
-  {
-    heading: "Acceptable use",
-    paragraphs: [
-      "You agree to use AIRLY TOOLS only for lawful purposes. In particular, you agree not to:",
+      "The Company is duly registered and operates under the following details:",
     ],
     list: [
-      "Use the service to violate any applicable law or regulation.",
-      "Attempt to probe, scan or test the vulnerability of our systems or circumvent any security measures.",
-      "Use automated scripts, bots or scrapers to access the service beyond the limits of your plan or our published API terms.",
-      "Resell, sublicense or redistribute the service or its output without our written permission.",
-      "Use the service to generate or spread content that is unlawful, defamatory, harassing or deceptive.",
-      "Interfere with or disrupt the integrity or performance of the service for other users.",
+      "Legal name: Nelson Digital FZ LLC",
+      "Jurisdiction of incorporation: United Arab Emirates (free zone company)",
+      "Website: https://nelsondigital.shop/",
     ],
   },
   {
-    heading: "Subscriptions and payments",
+    heading: "Nature of business",
     paragraphs: [
-      "Paid plans are billed in advance on a monthly or yearly basis and renew automatically until cancelled. Prices are displayed before purchase and may change with at least 30 days notice. You can cancel at any time from your account settings; access to paid features continues until the end of the paid period. Within the first 30 days of a new Pro subscription you may request a full refund by contacting support.",
+      "Nelson Digital FZ LLC is a digital marketing and consulting company. Our core activities include, without limitation:",
+      "The Company does not provide banking, payment processing, money transmission, currency exchange, investment advisory, brokerage, insurance, lending, or any other regulated financial services. Nothing on this Website constitutes financial, legal, tax, or investment advice.",
+    ],
+    list: [
+      "Digital marketing strategy, advisory, and consulting",
+      "Search engine optimisation (SEO) leadership, audits, and roadmap development",
+      "Google Ads and PPC campaign management",
+      "Landing page design, CRO, and funnel optimisation",
+      "LLM and AI search visibility programmes",
+      "Growth programme design, funnel optimisation, and acquisition planning",
+      "Campaign oversight, performance analysis, and marketing operations support",
+      "Retainer based advisory and phased consulting engagements",
     ],
   },
   {
-    heading: "AI generated content",
+    heading: "Website use licence",
     paragraphs: [
-      "Answers produced by AIRLY TOOLS are generated by artificial intelligence based on third party sources. While we work hard to make answers accurate and always provide citations, we cannot guarantee that every answer is complete, current or correct. Answers are provided for informational purposes only and do not constitute professional, legal, medical or financial advice. Always verify important information using the cited sources or a qualified professional.",
+      "Subject to your compliance with these Terms, we grant you a limited, not exclusive, not transferable, revocable licence to access and use the Website for lawful personal or internal business purposes. You may not:",
+    ],
+    list: [
+      "Copy, reproduce, distribute, or create derivative works from Website content except as permitted by applicable law",
+      "Use automated systems (bots, scrapers, crawlers) to access the Website without our prior written consent",
+      "Attempt to gain unauthorised access to any systems, networks, or data connected to the Website",
+      "Introduce malware, viruses, or harmful code",
+      "Interfere with the proper functioning or security of the Website",
+      "Misrepresent your identity or affiliation when contacting us or submitting enquiries",
+      "Use the Website for any unlawful, fraudulent, or abusive purpose",
+    ],
+  },
+  {
+    heading: "Client services and separate agreements",
+    paragraphs: [
+      "Information on this Website about our services is provided for general informational purposes only and does not constitute an offer, solicitation, or binding commitment. Any engagement for paid services requires a separate written agreement executed by authorised representatives of both parties.",
+      "In the event of any conflict between these Terms and a signed client agreement, the signed client agreement shall prevail with respect to the subject matter of that engagement.",
+    ],
+  },
+  {
+    heading: "Fees, invoicing, and payment terms",
+    paragraphs: [
+      "Fees for services, payment schedules, currencies, and invoicing terms are defined exclusively in applicable client agreements. Unless otherwise agreed in writing, all fees are exclusive of applicable taxes, duties, and third party costs. The Company reserves the right to suspend or terminate services for nonpayment in accordance with contractual terms.",
     ],
   },
   {
     heading: "Intellectual property",
     paragraphs: [
-      "The service, including its software, design, trademarks and content created by us, is owned by Airly Tools Inc. and protected by intellectual property laws. We grant you a limited, personal, revocable license to use the service in accordance with these terms. Content from third party sources remains the property of its respective owners, and citations link back to those sources.",
+      "All content on the Website is owned by or licensed to the Company and protected by applicable intellectual property laws. The Nelson Digital name and associated branding may not be used without our prior written consent.",
+      "Ownership of deliverables and work product created under client engagements is governed by the relevant client agreement. Unless expressly assigned, pre existing tools, methodologies, and operational expertise remain the Company's property.",
     ],
   },
   {
-    heading: "Privacy",
+    heading: "Acceptable use and compliance",
     paragraphs: [
-      "Your privacy matters to us. Our Privacy Policy explains what data we collect, why we collect it and how you can control it. By using the service you agree to the processing of your information as described in the Privacy Policy.",
+      "You agree not to use our Website or services to promote, facilitate, or engage in:",
+      "We reserve the right to refuse or terminate any engagement that we reasonably believe poses legal, reputational, or compliance risk.",
+    ],
+    list: [
+      "Illegal activities or content prohibited under UAE law or the laws of any applicable jurisdiction",
+      "Deceptive, misleading, or fraudulent practices",
+      "Content that infringes third party intellectual property, privacy, or publicity rights",
+      "Hate speech, harassment, discrimination, or content that violates platform policies",
+      "Products or services restricted by applicable advertising standards",
+      "Activities that violate sanctions, export controls, or trade restrictions",
     ],
   },
   {
-    heading: "Disclaimer of warranties",
+    heading: "Money laundering and sanctions",
     paragraphs: [
-      "The service is provided on an as is and as available basis. To the maximum extent permitted by law, we disclaim all warranties, whether express or implied, including warranties of merchantability, fitness for a particular purpose and non infringement. We do not warrant that the service will be uninterrupted, error free or completely secure.",
+      "The Company is committed to compliance with applicable money laundering (AML), counter terrorist financing (CTF), and economic sanctions laws and regulations, including requirements applicable in the United Arab Emirates and international standards where relevant to our operations.",
+      "We may conduct customer due diligence, request identification and corporate documentation, verify the source of funds where appropriate, and monitor transactions for suspicious activity. By using this Website or entering into a business relationship with us, you represent that you are not subject to sanctions and that funds used in any engagement are derived from lawful sources.",
+    ],
+  },
+  {
+    heading: "Confidentiality",
+    paragraphs: [
+      "Information that is not public and exchanged during commercial discussions or under client agreements shall be treated as confidential by both parties to the extent described in applicable contracts or, in the absence of a contract, with reasonable care and only for the purpose of evaluating or performing the proposed engagement.",
+    ],
+  },
+  {
+    heading: "Disclaimers",
+    paragraphs: [
+      "The Website and its content are provided on an as is and as available basis without warranties of any kind, whether express, implied, or statutory, including but not limited to warranties of merchantability, fitness for a particular purpose, not infringing on third party rights, accuracy, or uninterrupted availability.",
+      "We do not warrant that marketing outcomes, rankings, traffic levels, conversion rates, or return on spend will be achieved. Performance depends on numerous external factors beyond our control.",
     ],
   },
   {
     heading: "Limitation of liability",
     paragraphs: [
-      "To the maximum extent permitted by law, Airly Tools Inc. shall not be liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of profits, data or goodwill, arising out of or in connection with your use of the service. Our total aggregate liability for any claim arising from these terms or the service shall not exceed the amount you paid us in the twelve months preceding the claim, or one hundred US dollars if you have not paid us anything.",
+      "To the maximum extent permitted by applicable law, the Company and its directors, officers, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss of profits, revenue, data, goodwill, or business opportunity, arising from or related to your use of the Website or these Terms.",
+      "Our aggregate liability arising from or relating to the Website (excluding liability that cannot be excluded under applicable law) shall not exceed one hundred United States dollars (USD 100) or the minimum amount permitted by law, whichever is greater.",
     ],
   },
   {
-    heading: "Termination",
+    heading: "Indemnification",
     paragraphs: [
-      "You may stop using the service and delete your account at any time. We may suspend or terminate your access if you materially breach these terms, if required by law, or if we discontinue the service. Where reasonable, we will give you notice and an opportunity to export your data before termination takes effect.",
+      "You agree to indemnify, defend, and hold harmless the Company and its affiliates from and against any claims, damages, losses, liabilities, costs, and expenses (including reasonable legal fees) arising from your breach of these Terms, your misuse of the Website, or your violation of any applicable law or third party rights.",
     ],
   },
   {
-    heading: "Changes to these terms",
+    heading: "Privacy and data protection",
     paragraphs: [
-      "We may update these terms from time to time. If the changes are material, we will notify you by email or through the service at least 14 days before they take effect. Your continued use of the service after the effective date constitutes acceptance of the updated terms.",
+      "Our collection and processing of personal data is described in our Privacy Policy, which forms an integral part of these Terms.",
     ],
   },
   {
-    heading: "Governing law",
+    heading: "Governing law and dispute resolution",
     paragraphs: [
-      "These terms are governed by the laws of the State of California, without regard to its conflict of law principles. Any disputes arising from these terms or the service shall be resolved in the state or federal courts located in San Francisco County, California, and you consent to their jurisdiction.",
+      "These Terms are governed by and construed in accordance with the laws of the United Arab Emirates, without regard to conflict of law principles. Any dispute arising out of or in connection with these Terms or the Website shall be subject to the exclusive jurisdiction of the courts of the United Arab Emirates, unless mandatory applicable law requires otherwise.",
+      "Before initiating formal proceedings, the parties agree to attempt to resolve disputes in good faith through direct communication via our Contact page.",
     ],
   },
   {
     heading: "Contact",
     paragraphs: [
-      "Questions about these terms? Write to us at legal@airly.tools or by post at Airly Tools Inc., 548 Market Street, San Francisco, CA 94104, United States.",
+      "For questions regarding these Terms, please contact us at legal@nelsondigital.shop or through the Contact page on this Website.",
     ],
   },
 ];
@@ -106,8 +152,8 @@ export default function TermsPage() {
   return (
     <LegalPage
       title="Terms of Service"
-      updated="June 1, 2026"
-      intro="These Terms of Service govern your access to and use of AIRLY TOOLS. Please read them carefully. They describe your rights and responsibilities when using our AI search service."
+      updated="May 22, 2026"
+      intro="These Terms and Conditions govern access to and use of this website and describe the legal framework under which Nelson Digital FZ LLC operates its digital marketing and consulting business."
       sections={sections}
     />
   );
