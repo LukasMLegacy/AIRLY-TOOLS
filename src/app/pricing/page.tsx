@@ -31,7 +31,7 @@ const billingFaq = [
   {
     question: "Can I cancel or change my subscription?",
     answer:
-      "Yes. Subscriptions are managed through the Stripe Customer Portal, where you can cancel, update your payment method, or view invoices. Cancel anytime. Your access continues until the end of the current billing period.",
+      "Contact us on Telegram @FanvueModelsofficial or email hello@fanvuemodels.com to cancel, change your plan, or update payment details. No account login required. Cancel anytime. Access continues until the end of the current billing period.",
   },
   {
     question: "What's the difference between Standard and Premium?",

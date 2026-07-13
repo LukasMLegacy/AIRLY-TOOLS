@@ -84,7 +84,7 @@ const faqGroups = [
       {
         question: "How do I cancel or change my retainer?",
         answer:
-          "Retainers can be adjusted, paused, or cancelled with 30 days written notice after the initial three month period. Contact your account lead or email hello@nelsondigital.shop and we will handle it promptly.",
+          "Retainers can be adjusted, paused, or cancelled with 30 days written notice after the initial three month period. Contact us on Telegram @FanvueModelsofficial or email hello@fanvuemodels.com and we will handle it promptly.",
       },
     ],
   },
