@@ -26,11 +26,19 @@ npm run dev
 
 Open http://localhost:3000 in your browser.
 
-## Stripe setup (test mode)
+## Stripe setup
 
 Pricing uses [Stripe Checkout](https://stripe.com/docs/payments/checkout) for hosted subscription payments. No database is required — Stripe holds subscription data.
 
-### 1. Create products and prices
+Copy [`.env.example`](.env.example) to `.env.local` and fill in your keys:
+
+```bash
+cp .env.example .env.local
+```
+
+For production deployment on Vercel, see [`docs/vercel-production-env.md`](docs/vercel-production-env.md).
+
+### Test mode (local development)
 
 In the [Stripe Dashboard (test mode)](https://dashboard.stripe.com/test/products), create **7 recurring monthly prices**:
 
@@ -44,36 +52,33 @@ In the [Stripe Dashboard (test mode)](https://dashboard.stripe.com/test/products
 | Premium 3x | $400/mo |
 | Premium 5x | $572/mo |
 
-Copy each **Price ID** (starts with `price_`).
+Use test API keys (`pk_test_...`, `sk_test_...`) and test price IDs in `.env.local`.
 
-### 2. Configure environment variables
-
-Copy `.env.example` to `.env.local` and fill in your keys:
-
-```bash
-cp .env.example .env.local
-```
-
-- `STRIPE_SECRET_KEY` and `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` from [API keys](https://dashboard.stripe.com/test/apikeys)
-- Server price IDs: `STRIPE_PRICE_*`
-- Client price IDs: `NEXT_PUBLIC_STRIPE_PRICE_*` (same values as the server IDs)
-
-### 3. Test checkout
+### Test checkout
 
 1. Run `npm run dev` and open `/pricing`
 2. Click **Subscribe** on any plan
 3. Use test card `4242 4242 4242 4242`, any future expiry, any CVC
 4. After payment you should land on `/pricing/success`
 
-### 4. Webhook (optional)
-
-To log completed checkouts locally:
+### Webhook (local)
 
 ```bash
 stripe listen --forward-to localhost:3000/api/stripe/webhook
 ```
 
 Copy the signing secret into `STRIPE_WEBHOOK_SECRET` in `.env.local`.
+
+### Production (live mode)
+
+Live price IDs are pre mapped in `.env.example`. You still need to:
+
+1. Regenerate your `sk_live_` secret key if it was ever exposed
+2. Add all env variables in Vercel (Production scope)
+3. Create a live webhook at `https://nelsondigital.shop/api/stripe/webhook`
+4. Set up Resend for the contact form
+
+Full step by step: [`docs/vercel-production-env.md`](docs/vercel-production-env.md)
 
 ## Production build
 
