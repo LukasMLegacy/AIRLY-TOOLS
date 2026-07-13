@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 
 import { BackgroundPaths } from "@/components/hero";
+import { HomeGooeyMarquee } from "@/components/home-gooey-marquee";
+import { HomeSeoSpline } from "@/components/home-seo-spline";
 import { SectionHeading } from "@/components/section-heading";
 import { CtaSection } from "@/components/cta-section";
 import { Reveal } from "@/components/reveal";
@@ -122,6 +124,8 @@ export default function HomePage() {
     <>
       <BackgroundPaths title="Nelson Digital" />
 
+      <HomeSeoSpline />
+
       <section className="border-y border-black/5 bg-neutral-50 py-12 dark:border-white/10 dark:bg-neutral-900/40">
         <div className="container mx-auto px-4 md:px-6">
           <Reveal>
@@ -218,6 +222,8 @@ export default function HomePage() {
           </Reveal>
         </div>
       </section>
+
+      <HomeGooeyMarquee />
 
       <section className="container mx-auto px-4 py-24 md:px-6">
         <SectionHeading

@@ -172,6 +172,28 @@ export function getClientPriceIds() {
   };
 }
 
+const PLAN_SLUG_TO_PRICE_KEY: Record<
+  string,
+  keyof ReturnType<typeof getClientPriceIds>
+> = {
+  basic: "basic",
+  "standard-1x": "standard1x",
+  "standard-2x": "standard2x",
+  "standard-3x": "standard3x",
+  "premium-1x": "premium1x",
+  "premium-3x": "premium3x",
+  "premium-5x": "premium5x",
+};
+
+export const VALID_PLAN_SLUGS = Object.keys(PLAN_SLUG_TO_PRICE_KEY);
+
+export function getPriceIdByPlanSlug(slug: string): string | undefined {
+  const key = PLAN_SLUG_TO_PRICE_KEY[slug];
+  if (!key) return undefined;
+  const priceId = getClientPriceIds()[key];
+  return priceId || undefined;
+}
+
 export function getAllowedPriceIds(): string[] {
   return [
     BASIC_TIER.priceId,
