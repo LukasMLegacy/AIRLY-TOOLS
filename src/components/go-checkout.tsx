@@ -94,14 +94,19 @@ export function GoCheckout({ plan }: { plan: string }) {
   }
 
   return (
-    <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white px-4 text-center">
-      <Loader variant="light" />
-      <p className="mt-8 text-lg font-medium text-neutral-900">
-        Redirecting to secure checkout
-      </p>
-      <p className="mt-2 text-sm text-neutral-500">
-        Please wait while we connect you to Stripe.
-      </p>
+    <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white px-4">
+      <div className="flex h-32 w-full items-center justify-center overflow-hidden">
+        <Loader variant="green" />
+      </div>
+
+      <div className="mt-6 text-center">
+        <p className="text-lg font-medium text-neutral-900">
+          Redirecting to secure checkout
+        </p>
+        <p className="mt-2 text-sm text-neutral-500">
+          Please wait while we connect you to Stripe.
+        </p>
+      </div>
     </div>
   );
 }

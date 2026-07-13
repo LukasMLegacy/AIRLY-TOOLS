@@ -5,13 +5,19 @@ import { cn } from "@/lib/utils";
 import "./box-loader.css";
 
 type LoaderProps = {
-  variant?: "default" | "light";
+  variant?: "default" | "light" | "green";
 };
 
 const Loader: React.FC<LoaderProps> = ({ variant = "default" }) => {
   return (
-    <div className="relative">
-      <div className={cn("boxes", variant === "light" && "boxes-light")}>
+    <div className="box-loader-stage relative">
+      <div
+        className={cn(
+          "boxes",
+          variant === "light" && "boxes-light",
+          variant === "green" && "boxes-green"
+        )}
+      >
         <div className="box box-1">
           <div className="face face-front" />
           <div className="face face-right" />

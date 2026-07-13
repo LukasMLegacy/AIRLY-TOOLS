@@ -99,6 +99,26 @@
   --background: #f5f5f5;
 }
 
+.boxes-green .face {
+  --background: #7cff4f;
+}
+
+.boxes-green .face-right {
+  --background: #059669;
+}
+
+.boxes-green .face-top {
+  --background: #22c55e;
+}
+
+.boxes-green .face-back {
+  --background: #d1fae5;
+}
+
+.box-loader-stage {
+  overflow: hidden;
+}
+
 @keyframes box1 {
   0%,
   50% {
